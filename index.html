@@ -147,6 +147,18 @@ legend{font-size:13px;font-weight:700;color:var(--muted);padding:0 6px}
 .res .row b{font-family:var(--display)}
 .ka{color:var(--a)} .kb{color:var(--b)}
 .insight{font-size:17px;max-width:75ch}
+/* News */
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font:inherit;font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.newslist{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.ni{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.ni:last-child{border-bottom:0}
+.ni a.t{font-weight:700;color:var(--ink);text-decoration:none}
+.ni a.t:hover{color:var(--accent);text-decoration:underline}
+.ni .m{font-size:13px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tag{font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.outlook{border-left:4px solid var(--b);background:var(--surface);border-radius:0 12px 12px 0;padding:16px 18px;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
 @media (prefers-reduced-motion: reduce){a.card{transition:none}a.card:hover{transform:none}}
 </style>
 </head>
@@ -158,6 +170,7 @@ legend{font-size:13px;font-weight:700;color:var(--muted);padding:0 6px}
       <a href="#home">Overview</a>
       <a href="#compare">Compare paths</a>
       <a href="#calculator">Calculator</a>
+      <a href="#news">What's changing</a>
       <a href="#sources">Sources &amp; method</a>
     </nav>
   </div>
@@ -207,6 +220,7 @@ const PATHS = [
   {
     id:"college", name:"Four-year college", short:"College",
     tagline:"A bachelor's degree, then work or graduate school.",
+    outlook:{asOf:"", text:""}, // Brian: your dated read on what could change this path. Shows on the page once text is filled in.
     facts:{start:"4–6 yrs", cost:"$11,610/yr tuition (national public, in-state)", pay:"$82k median, bachelor's"},
     looks:[
       {when:"Year 1", text:"Full-time student. Little or no income. Choosing a major matters more than choosing a school name."},
@@ -232,6 +246,7 @@ const PATHS = [
   {
     id:"technical", name:"Technical college & trades", short:"Technical",
     tagline:"A certificate, diploma or associate degree tied to a specific job.",
+    outlook:{asOf:"", text:""}, // Brian: your dated read on what could change this path. Shows on the page once text is filled in.
     facts:{start:"Months–2 yrs", cost:"$4,050/yr (national public 2-year)", pay:"$61–64k median, core trades"},
     looks:[
       {when:"Year 1", text:"In a certificate or diploma program, often while working. Many short programs finish within a year."},
@@ -256,6 +271,7 @@ const PATHS = [
   {
     id:"apprenticeship", name:"Apprenticeship", short:"Apprenticeship",
     tagline:"A paid job with structured training and a national credential at the end.",
+    outlook:{asOf:"", text:""}, // Brian: your dated read on what could change this path. Shows on the page once text is filled in.
     facts:{start:"Paid day one", cost:"Usually no tuition", pay:"Rises in steps to journey-level"},
     looks:[
       {when:"Year 1", text:"Employed and paid at a percentage of full wage, with classroom hours alongside work."},
@@ -279,6 +295,7 @@ const PATHS = [
   {
     id:"military", name:"Military", short:"Military",
     tagline:"Enlist or commission, train for a specific job, and earn benefits.",
+    outlook:{asOf:"", text:""}, // Brian: your dated read on what could change this path. Shows on the page once text is filled in.
     facts:{start:"Paid in training", cost:"Multi-year commitment", pay:"~$66k total comp, E-4 at 4 yrs"},
     looks:[
       {when:"Year 1", text:"Basic training, then job school. Housing, food and health care provided or paid for."},
@@ -301,6 +318,7 @@ const PATHS = [
   {
     id:"work", name:"Work path", short:"Work path",
     tagline:"Start at a company and climb, with employer benefits doing some of the lifting.",
+    outlook:{asOf:"", text:""}, // Brian: your dated read on what could change this path. Shows on the page once text is filled in.
     facts:{start:"Immediately", cost:"None", pay:"$44–49k median, front-line supervisors"},
     looks:[
       {when:"Year 1", text:"Entry-level, often part-time while in high school. The first goal is full-time status and a reputation for reliability."},
@@ -328,6 +346,7 @@ const PATHS = [
   {
     id:"entrepreneurship", name:"Entrepreneurship", short:"Entrepreneurship",
     tagline:"Build something of their own: a service, a shop, a product.",
+    outlook:{asOf:"", text:""}, // Brian: your dated read on what could change this path. Shows on the page once text is filled in.
     facts:{start:"Any time", cost:"Varies; often savings", pay:"Highly variable"},
     looks:[
       {when:"Year 1", text:"Usually a side business while working or in school. Income is small and irregular."},
@@ -401,7 +420,7 @@ function home(){
   </section>
 
   <section class="stack" style="gap:14px">
-    <div class="panel-head"><h2>Explore the paths</h2><span style="display:flex;gap:16px;flex-wrap:wrap"><a href="#compare" class="back">See all six side by side →</a><a href="#calculator" class="back">Try the what-if calculator →</a></span></div>
+    <div class="panel-head"><h2>Explore the paths</h2><span style="display:flex;gap:16px;flex-wrap:wrap"><a href="#compare" class="back">See all six side by side →</a><a href="#calculator" class="back">Try the what-if calculator →</a><a href="#news" class="back">See what's changing →</a></span></div>
     <div class="cards">
       ${PATHS.map(p=>`<a class="card" href="#${p.id}"><h3>${esc(p.name)}</h3><p class="muted">${esc(p.tagline)}</p>
         <div class="facts"><span>Starts earning: <b>${esc(p.facts.start)}</b></span><span>Cost: <b>${esc(p.facts.cost)}</b></span><span>Pay: <b>${esc(p.facts.pay)}</b></span></div>
@@ -451,6 +470,8 @@ function pathPage(p){
     <section class="panel"><div class="panel-head"><h2>The numbers</h2>${legend()}</div>
       <div class="numrows">${p.numbers.map(n=>`<div class="numrow"><div><div style="font-weight:600">${esc(n.label)}</div><div class="n">${esc(n.note)}</div></div><div class="v">${esc(n.value)}</div><div style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">${pill(n.conf)}<span class="small">${srcLink(n.src)}</span></div></div>`).join("")}</div>
     </section>
+
+    ${p.outlook&&p.outlook.text?`<section class="outlook"><div class="eyebrow" style="color:var(--b)">What could change this path · as of ${esc(p.outlook.asOf)}</div><p>${esc(p.outlook.text)}</p><p class="muted small" style="margin-top:8px">A judgment call, not data. See <a href="#news">What's changing</a> for the sources behind it.</p></section>`:""}
 
     ${p.examples?`<section class="stack" style="gap:14px"><h2>Company examples</h2><div class="two">${p.examples.map(e=>`<div class="panel"><h3>${esc(e.name)}</h3><p style="margin-top:6px">${esc(e.text)}</p><p class="small" style="margin-top:8px">${pill("self")} ${srcLink(e.src)}</p></div>`).join("")}</div>
       <div class="callout ok">Coming next: short profiles of real people from Georgia who took this path. Where the data is thin, their stories carry the most weight.</div></section>`:""}
@@ -628,18 +649,71 @@ function bindCalc(){
   };
 }
 
+/* =========================================================
+   WHAT'S CHANGING — reads news.json written by the daily GitHub Action
+   ========================================================= */
+const TAGNAMES = {college:"College", technical:"Trades & technical", apprenticeship:"Apprenticeship", military:"Military", work:"Work path", entrepreneurship:"Entrepreneurship", ai:"AI & automation"};
+const NEWS = {data:null, error:null, filter:"all", loading:false};
+
+function loadNews(){
+  if(NEWS.data || NEWS.loading) return;
+  NEWS.loading = true;
+  fetch("news.json", {cache:"no-store"})
+    .then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+    .then(d=>{ NEWS.data=d; })
+    .catch(e=>{ NEWS.error=String(e); })
+    .finally(()=>{ NEWS.loading=false; renderNews(); });
+}
+
+function newsPage(){
+  const chips = [["all","Everything"],...Object.entries(TAGNAMES)].map(([k,v])=>`<button class="chip" type="button" data-nf="${k}" aria-pressed="${NEWS.filter===k}">${esc(v)}</button>`).join("");
+  return `<div class="stack">
+    <section><a class="back" href="#home">← Overview</a><h1 style="margin-top:10px">What's changing</h1>
+      <p class="lede">The rest of this site looks back at what already happened. This page collects recent releases and research from a short list of reputable labor-market sources, so you can see where things may be heading. Headlines link to the original; nothing here is a prediction.</p></section>
+    <div class="chips" role="group" aria-label="Filter by path">${chips}</div>
+    <div id="news-out"><p class="muted">Loading…</p></div>
+    <div class="callout"><b>How to read this.</b> One study or one month of data rarely changes the picture. Look for the same direction showing up across several sources over time. Research groups also publish opinion pieces; the source label tells you who said it.</div>
+  </div>`;
+}
+
+function renderNews(){
+  const el=document.getElementById("news-out"); if(!el) return;
+  if(NEWS.loading){ el.innerHTML=`<p class="muted">Loading…</p>`; return; }
+  if(NEWS.error || !NEWS.data){ el.innerHTML=`<div class="callout">The news feed isn't available in this view. It loads on the live site, where a daily update writes it.</div>`; return; }
+  const d=NEWS.data;
+  if(!d.updated){ el.innerHTML=`<div class="callout">The first daily update hasn't run yet. Check back tomorrow.</div>`; return; }
+  const items=d.items.filter(i=>NEWS.filter==="all"||i.tags.includes(NEWS.filter));
+  const upd=new Date(d.updated);
+  const okN=d.sources.filter(s=>s.ok).length;
+  const fmt=s=>s? new Date(s+"T12:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}) : "Undated";
+  el.innerHTML = `<div class="stack" style="gap:12px">
+    <p class="muted small">Updated ${upd.toLocaleDateString(undefined,{month:"long",day:"numeric",year:"numeric"})} · ${okN} of ${d.sources.length} sources responded · ${items.length} item${items.length===1?"":"s"}${NEWS.filter!=="all"?" tagged "+esc(TAGNAMES[NEWS.filter]):""}</p>
+    ${items.length? `<div class="newslist">${items.map(i=>`<div class="ni"><a class="t" href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+      <div class="m"><span>${esc(i.source)}</span><span aria-hidden="true">·</span><span>${fmt(i.date)}</span>${i.tags.map(t=>`<span class="tag">${esc(TAGNAMES[t]||t)}</span>`).join("")}</div></div>`).join("")}</div>`
+      : `<div class="callout ok">Nothing recent with this tag. Try "Everything."</div>`}
+    <details><summary class="small muted">Source status</summary><ul class="clean small" style="margin-top:8px">${d.sources.map(s=>`<li>${esc(s.name)}: ${s.ok? s.count+" item"+(s.count===1?"":"s") : "<span style='color:var(--limited)'>didn't respond</span>"}</li>`).join("")}</ul></details>
+  </div>`;
+}
+
+function bindNews(){
+  const v=document.getElementById("view");
+  v.onclick = e=>{ const b=e.target.closest("[data-nf]"); if(!b) return; NEWS.filter=b.dataset.nf;
+    document.querySelectorAll("[data-nf]").forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.nf===NEWS.filter))); renderNews(); };
+}
+
 function route(keepScroll){
   const h = (location.hash||"#home").slice(1);
   const v = document.getElementById("view");
   const p = PATHS.find(x=>x.id===h);
-  v.oninput = v.onchange = null;
-  v.innerHTML = h==="compare"?compare(): h==="sources"?sources(): h==="calculator"?calculator(): p?pathPage(p): home();
+  v.oninput = v.onchange = v.onclick = null;
+  v.innerHTML = h==="compare"?compare(): h==="sources"?sources(): h==="calculator"?calculator(): h==="news"?newsPage(): p?pathPage(p): home();
   if(h==="calculator"){ bindCalc(); renderCalc(); }
+  if(h==="news"){ bindNews(); renderNews(); loadNews(); }
   document.querySelectorAll("nav.main a").forEach(a=>{
     const t=a.getAttribute("href").slice(1);
-    if(t===h || (t==="home" && !["compare","sources","calculator"].includes(h))) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");
+    if(t===h || (t==="home" && !["compare","sources","calculator","news"].includes(h))) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");
   });
-  document.title = (p? p.name+" · " : h==="compare"?"Compare paths · ": h==="sources"?"Sources · ": h==="calculator"?"Calculator · ":"") + "Paths Forward Georgia";
+  document.title = (p? p.name+" · " : h==="compare"?"Compare paths · ": h==="sources"?"Sources · ": h==="calculator"?"Calculator · ": h==="news"?"What's changing · ":"") + "Paths Forward Georgia";
   if(keepScroll!==true) window.scrollTo(0,0);
 }
 window.addEventListener("hashchange", ()=>route());

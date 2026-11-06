@@ -1,0 +1,15 @@
+{
+  "_about": "Approved feeds for the 'What's changing' page. filter=true keeps only items that match work/education keywords (for broad publishers). Add or remove sources here; the daily Action picks up changes automatically.",
+  "max_age_days": 75,
+  "max_per_source": 12,
+  "sources": [
+    {"name": "BLS: The Economics Daily", "url": "https://www.bls.gov/feed/ted.rss", "kind": "data", "filter": false},
+    {"name": "BLS: Employment Situation", "url": "https://www.bls.gov/feed/empsit.rss", "kind": "data", "filter": false},
+    {"name": "BLS: Job Openings (JOLTS)", "url": "https://www.bls.gov/feed/jolts.rss", "kind": "data", "filter": false},
+    {"name": "NY Fed: Liberty Street Economics", "url": "https://libertystreeteconomics.newyorkfed.org/feed/", "kind": "research", "filter": true},
+    {"name": "Indeed Hiring Lab", "url": "https://www.hiringlab.org/feed/", "kind": "data", "filter": false},
+    {"name": "Brookings", "url": "https://www.brookings.edu/feed/", "kind": "research", "filter": true},
+    {"name": "Pew Research Center", "url": "https://www.pewresearch.org/feed/", "kind": "research", "filter": true},
+    {"name": "Stanford Digital Economy Lab", "url": "https://digitaleconomy.stanford.edu/feed/", "kind": "research", "filter": true}
+  ]
+}
