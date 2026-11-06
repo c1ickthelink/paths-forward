@@ -18,6 +18,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 CONFIG = HERE / "sources.json"
+PINNED = HERE / "pinned.json"
 OUT = ROOT / "news.json"
 
 # Browser-like UA: some government sites (BLS) refuse generic bot user agents.
@@ -122,15 +123,25 @@ def main():
             status.append({"name": src["name"], "ok": False, "error": f"{type(e).__name__}: {str(e)[:120]}"})
             print(f"WARN {src['name']}: {e}", file=sys.stderr)
 
-    seen, uniq = set(), []
+    # Hand-picked key reads: always included, exempt from the age cutoff, listed first.
+    pinned = []
+    if PINNED.exists():
+        for it in json.loads(PINNED.read_text(encoding="utf-8")).get("items", []):
+            pinned.append({"title": it["title"], "url": it["url"], "date": it.get("date"), "source": it["source"],
+                           "kind": "pinned", "tags": it.get("tags", []), "note": it.get("note", ""), "pinned": True})
+    pinned_urls = {p["url"] for p in pinned}
+
+    seen, uniq = set(pinned_urls), list(pinned)
+    feed_count = 0
     for it in sorted(all_items, key=lambda x: x["date"] or "", reverse=True):
         if it["url"] in seen:
             continue
         seen.add(it["url"])
         uniq.append(it)
+        feed_count += 1
 
-    # Keep the previous file if every source failed, so a bad night doesn't blank the page.
-    if not uniq and OUT.exists():
+    # Keep the previous file if every feed failed, so a bad night doesn't blank the page.
+    if feed_count == 0 and OUT.exists() and json.loads(OUT.read_text(encoding="utf-8")).get("sources"):
         print("All sources empty or failed; keeping previous news.json", file=sys.stderr)
         return
 
@@ -139,7 +150,7 @@ def main():
         "items": uniq,
         "sources": status,
     }, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {len(uniq)} items from {sum(s['ok'] for s in status)}/{len(status)} sources")
+    print(f"Wrote {len(pinned)} pinned + {feed_count} feed items from {sum(s['ok'] for s in status)}/{len(status)} sources")
 
 if __name__ == "__main__":
     main()

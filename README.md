@@ -29,7 +29,7 @@ Most figures are national. Georgia-specific data (GA DOL wages, TCSG in-field pl
 
 ## News feed
 
-`.github/workflows/news.yml` runs `news/fetch_news.py` daily (and on demand from the Actions tab). It reads the approved feeds in `news/sources.json`, keeps headline/link/date/source only, tags each item by path, and commits `news.json`. A failing feed is skipped and shown in "Source status"; if every feed fails, the previous `news.json` is kept.
+`.github/workflows/news.yml` runs `news/fetch_news.py` daily (and on demand from the Actions tab). It reads the approved feeds in `news/sources.json` plus hand-picked "Key reads" in `news/pinned.json` (always shown, any age), keeps headline/link/date/source only, tags each item by path, and commits `news.json`. A failing feed is skipped and shown in "Source status"; if every feed fails, the previous `news.json` is kept.
 
 Each path in `PATHS` also has an `outlook: {asOf, text}` field for a short, dated "What could change this path" note. It only appears once `text` is filled in.
 

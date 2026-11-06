@@ -1,1 +1,108 @@
-{"updated": null, "items": [], "sources": []}
+{
+ "updated": "2026-11-06T20:21+00:00",
+ "items": [
+  {
+   "title": "The Labor Market for Recent College Graduates",
+   "url": "https://www.newyorkfed.org/research/college-labor-market",
+   "date": null,
+   "source": "Federal Reserve Bank of New York",
+   "kind": "pinned",
+   "tags": [
+    "college"
+   ],
+   "note": "Updated quarterly. Unemployment, underemployment, and outcomes by major for grads 22–27.",
+   "pinned": true
+  },
+  {
+   "title": "Do Job Postings Show Early Labor Market Effects of AI?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/",
+   "date": "2026-05",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "pinned",
+   "tags": [
+    "ai",
+    "college"
+   ],
+   "note": "Finds it hard to pin the entry-level hiring slowdown on AI alone.",
+   "pinned": true
+  },
+  {
+   "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine/",
+   "date": "2025-11-13",
+   "source": "Stanford Digital Economy Lab",
+   "kind": "pinned",
+   "tags": [
+    "ai",
+    "college"
+   ],
+   "note": "Payroll-data study of early-career workers in AI-exposed jobs; updated as new data comes in.",
+   "pinned": true
+  },
+  {
+   "title": "How AI may reshape career pathways to better jobs",
+   "url": "https://www.brookings.edu/articles/how-ai-may-reshape-career-pathways-to-better-jobs/",
+   "date": "2026-04-02",
+   "source": "Brookings",
+   "kind": "pinned",
+   "tags": [
+    "ai",
+    "work"
+   ],
+   "note": "Focuses on the 70 million workers without four-year degrees and the job ladders they climb.",
+   "pinned": true
+  },
+  {
+   "title": "New grads looking for work: the struggle is real",
+   "url": "https://www.hiringlab.org/2026/04/23/new-grads-looking-for-work-the-struggle-is-real/",
+   "date": "2026-04-23",
+   "source": "Indeed Hiring Lab",
+   "kind": "pinned",
+   "tags": [
+    "college",
+    "ai"
+   ],
+   "note": "Where postings for new graduates are and aren't holding up.",
+   "pinned": true
+  },
+  {
+   "title": "More Americans think AI will take people's jobs than 2 years ago",
+   "url": "https://www.pewresearch.org/?p=356101",
+   "date": null,
+   "source": "Pew Research Center",
+   "kind": "pinned",
+   "tags": [
+    "ai"
+   ],
+   "note": "Opinion survey of U.S. adults, June 22–28, 2026. Measures expectations, not outcomes.",
+   "pinned": true
+  },
+  {
+   "title": "Wind turbine service technicians employment projected to grow 49.9 percent from 2024 to 2034",
+   "url": "https://www.bls.gov/opub/ted/2026/wind-turbine-service-technicians-employment-projected-to-grow-49-9-percent-from-2024-to-2034.htm",
+   "date": "2026-07-13",
+   "source": "BLS: The Economics Daily",
+   "kind": "pinned",
+   "tags": [
+    "technical"
+   ],
+   "note": "The 15 fastest-growing occupations, several in skilled trades and healthcare.",
+   "pinned": true
+  },
+  {
+   "title": "Employment Projections: 2024–2034",
+   "url": "https://www.bls.gov/news.release/ecopro.nr0.htm",
+   "date": "2025-08-28",
+   "source": "Bureau of Labor Statistics",
+   "kind": "pinned",
+   "tags": [
+    "college",
+    "technical",
+    "work"
+   ],
+   "note": "The official 10-year outlook by occupation. Next edition expected in late summer.",
+   "pinned": true
+  }
+ ],
+ "sources": []
+}
