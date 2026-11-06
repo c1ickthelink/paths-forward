@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paths Forward Georgia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a calm civic almanac. Summary first, each path on the same template, every number tagged with source + data quality. */
+:root{
+  --bg:#f4f6f5;
+  --surface:#ffffff;
+  --ink:#16201d;
+  --muted:#5a6863;
+  --line:#dbe2df;
+  --accent:#1f6b57;      /* pine */
+  --accent-soft:#e2efe9;
+  --strong:#1f6b57; --strong-bg:#e2efe9;
+  --limited:#8a5a00; --limited-bg:#fbefd6;
+  --self:#7a3b6b;   --self-bg:#f5e4f0;
+  --bar:#b9cfc6; --bar-hi:#1f6b57;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101614; --surface:#18201d; --ink:#e7eeeb; --muted:#9db0a9; --line:#2b3733;
+    --accent:#5fc3a3; --accent-soft:#1d3a31;
+    --strong:#7bd3b5; --strong-bg:#1d3a31;
+    --limited:#f0c069; --limited-bg:#3a2f17;
+    --self:#e6a6d6; --self-bg:#3a2234;
+    --bar:#2f4a41; --bar-hi:#5fc3a3;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101614; --surface:#18201d; --ink:#e7eeeb; --muted:#9db0a9; --line:#2b3733;
+  --accent:#5fc3a3; --accent-soft:#1d3a31;
+  --strong:#7bd3b5; --strong-bg:#1d3a31;
+  --limited:#f0c069; --limited-bg:#3a2f17;
+  --self:#e6a6d6; --self-bg:#3a2234;
+  --bar:#2f4a41; --bar-hi:#5fc3a3;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,4.4vw,42px);font-weight:700}
+h2{font-size:24px;font-weight:700}
+h3{font-size:18px;font-weight:700}
+p{margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line);background:var(--surface)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:14px}
+.brand{font-family:var(--display);font-weight:700;font-size:20px;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
+.brand .mark{width:26px;height:26px;border-radius:7px;background:var(--accent);display:grid;place-items:center;color:var(--surface);font-size:15px}
+nav.main{display:flex;gap:4px;flex-wrap:wrap}
+nav.main a{text-decoration:none;color:var(--muted);font-weight:600;font-size:15px;padding:6px 10px;border-radius:8px}
+nav.main a[aria-current="page"],nav.main a:hover{color:var(--ink);background:var(--accent-soft)}
+main{padding:32px 0 64px}
+.stack{display:flex;flex-direction:column;gap:36px}
+.lede{max-width:66ch;color:var(--muted);font-size:18px;margin-top:10px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.tile .big{font-family:var(--display);font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.05}
+.tile .lbl{font-weight:600}
+.tile .src{font-size:13px;color:var(--muted);margin-top:auto;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.pill.strong{color:var(--strong);background:var(--strong-bg)}
+.pill.limited{color:var(--limited);background:var(--limited-bg)}
+.pill.self{color:var(--self);background:var(--self-bg)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.panel-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.chart svg{width:100%;height:auto;display:block}
+.chart text{fill:var(--ink);font-family:var(--body)}
+.chart .axis{fill:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+a.card{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;border-top:4px solid var(--accent);transition:transform .15s ease, box-shadow .15s ease}
+a.card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+a.card .go{color:var(--accent);font-weight:700;font-size:15px;margin-top:auto}
+.facts{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.facts b{color:var(--ink);font-variant-numeric:tabular-nums}
+.legend{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-size:14px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:860px;font-size:15px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--bg)}
+td.num{font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+td a{font-weight:700}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.yr{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.yr .when{font-family:var(--display);font-weight:700;color:var(--accent);font-size:15px;margin-bottom:4px}
+ul.clean{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.grades{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grade{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.grade h3{display:flex;align-items:center;gap:10px}
+.grade .band{font-size:13px;color:var(--muted);font-weight:600}
+.numrows{display:flex;flex-direction:column}
+.numrow{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr) auto;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);align-items:start}
+.numrow:last-child{border-bottom:0}
+.numrow .v{font-family:var(--display);font-weight:700;font-size:20px;font-variant-numeric:tabular-nums}
+.numrow .n{font-size:14px;color:var(--muted)}
+@media (max-width:620px){.numrow{grid-template-columns:1fr}}
+.callout{border-left:4px solid var(--limited);background:var(--limited-bg);padding:14px 16px;border-radius:0 10px 10px 0}
+.callout.ok{border-color:var(--accent);background:var(--accent-soft)}
+.back{font-weight:700;text-decoration:none;font-size:15px}
+.srcs{display:flex;flex-direction:column;gap:12px}
+.srcs .s{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.srcs .s .id{font-size:12px;color:var(--muted);font-weight:700}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:14px}
+sup a{text-decoration:none;font-size:11px;font-weight:700}
+/* Calculator */
+:root{--a:var(--accent);--b:#b8680b}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--b:#f0a54a}}
+:root[data-theme="dark"]{--b:#f0a54a}
+.calc-profiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.prof{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:14px;border-top:4px solid var(--a)}
+.prof.b{border-top-color:var(--b)}
+.prof h3 .dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--a);margin-right:8px}
+.prof.b h3 .dot{background:var(--b)}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px 12px}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600}
+label.f span.h{font-weight:400;color:var(--muted);font-size:12px}
+input[type=number],select{font:inherit;font-size:15px;padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%}
+input[type=number]:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
+fieldset{border:1px solid var(--line);border-radius:10px;padding:10px 12px 12px;margin:0}
+legend{font-size:13px;font-weight:700;color:var(--muted);padding:0 6px}
+.phase{display:grid;grid-template-columns:90px 1fr;gap:8px;align-items:center;margin-top:6px;font-size:14px}
+.globals{display:flex;gap:16px;flex-wrap:wrap;align-items:end}
+.globals label.f{min-width:170px}
+.chk{display:flex;gap:8px;align-items:center;font-size:14px;max-width:420px}
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.res{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.res .k{font-size:13px;color:var(--muted);font-weight:600}
+.res .row{display:flex;justify-content:space-between;gap:8px;font-variant-numeric:tabular-nums;margin-top:6px}
+.res .row b{font-family:var(--display)}
+.ka{color:var(--a)} .kb{color:var(--b)}
+.insight{font-size:17px;max-width:75ch}
+@media (prefers-reduced-motion: reduce){a.card{transition:none}a.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home"><span class="mark" aria-hidden="true">↗</span>Paths Forward <span class="muted" style="font-weight:500">Georgia</span></a>
+    <nav class="main" aria-label="Main">
+      <a href="#home">Overview</a>
+      <a href="#compare">Compare paths</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#sources">Sources &amp; method</a>
+    </nav>
+  </div>
+</header>
+<main><div class="wrap" id="view"></div></main>
+<footer><div class="wrap">Prototype · Numbers are national unless marked Georgia · Every figure links to its source on the Sources page. Not career, legal or financial advice.</div></footer>
+
+<script>
+/* =========================================================
+   DATA — keep this block shaped like a future data.json.
+   conf: "strong" | "limited" | "self"
+   ========================================================= */
+const SOURCES = {
+  bls_edpays: {title:"BLS, Education pays, 2025 (Career Outlook, 2026)", url:"https://www.bls.gov/careeroutlook/2026/data-on-display/education-pays.htm", year:"2025", note:"Median weekly earnings of full-time workers age 25+. 2025 averages exclude October, so BLS says they aren't strictly comparable with other years."},
+  bls_hsgec: {title:"BLS, College Enrollment and Work Activity of Recent High School Graduates, 2024", url:"https://www.bls.gov/news.release/hsgec.nr0.htm", year:"Oct 2024", note:"Recent high school graduates ages 16–24."},
+  nsc_completion: {title:"National Student Clearinghouse, Yearly Progress and Completion (Dec 2025)", url:"https://www.studentclearinghouse.org/news/college-completion-rates-edge-upward/", year:"Fall 2019 cohort", note:"Completion = any undergraduate certificate, associate or bachelor's within six years, at any institution."},
+  nyfed: {title:"Federal Reserve Bank of New York, The Labor Market for Recent College Graduates", url:"https://www.newyorkfed.org/research/college-labor-market", year:"Q2 2026", note:"Grads ages 22–27 with a bachelor's or higher. Underemployed = working in a job that typically doesn't require a degree. Updated quarterly."},
+  debt: {title:"LendingTree analysis of College Board / NPSAS data (via MoneyLion, 2026)", url:"https://www.moneylion.com/learn/debt/student-loans/what-is-the-average-student-loan-debt", year:"Class of 2024", note:"Average among bachelor's recipients who borrowed (about 47% did). Secondary compilation; swap for College Board Trends in Student Aid directly."},
+  cb_tuition: {title:"College Board, Trends in College Pricing 2024 (as compiled)", url:"https://research.collegeboard.org/trends/college-pricing", year:"2024–25", note:"National published tuition and fees. Georgia figures and HOPE/Zell coverage still to add."},
+  bls_bed: {title:"BLS Business Employment Dynamics, establishment age and survival", url:"https://www.bls.gov/bdm/bdmage.htm", year:"Cohort opened Mar 2020", note:"An establishment 'closing' includes owners who retire, sell or move, not only failures."},
+  oews_trades: {title:"BLS Occupational Employment and Wage Statistics, May 2025 (electricians, plumbers, HVAC)", url:"https://www.bls.gov/oes/current/oes472111.htm", year:"May 2025", note:"National medians. Georgia medians to add from GA DOL / OEWS state tables."},
+  oews_work: {title:"BLS OEWS, first-line supervisors of retail and food service workers, May 2025", url:"https://www.bls.gov/oes/current/oes411011.htm", year:"May 2025", note:"National medians, retrieved via secondary compilations; verify against BLS tables before launch."},
+  tcsg: {title:"Technical College System of Georgia, AY2025 graduates and placement", url:"https://www.tcsg.edu/technical-college-system-of-georgia-celebrates-highest-number-of-graduates-in-history/", year:"AY 2025", note:"'Placement' counts graduates who got a job OR continued their education. Self-reported."},
+  dol_appr: {title:"U.S. DOL, apprenticeship.gov career-seeker materials", url:"https://www.apprenticeship.gov", year:"2026", note:"Promotional summary figures; methodology varies by state data source. National completion rates not published here."},
+  dfas: {title:"DFAS 2026 military basic pay tables (as compiled)", url:"https://www.dfas.mil/MilitaryMembers/payentitlements/Pay-Tables/", year:"2026", note:"Basic pay only unless noted. Total compensation adds tax-free housing (BAH) and food (BAS) allowances that vary by location."},
+  rmc: {title:"FedTools analysis of 2026 DFAS tables, Regular Military Compensation example", url:"https://www.fedtools.com/calculators/military-pay-calculator/rank/e-4", year:"2026", note:"E-4, 4 years of service, national-average housing allowance. Secondary calculation; use the DFAS RMC calculator for exact figures."},
+  gsfc_de: {title:"Georgia Student Finance Commission, Dual Enrollment (2026–27)", url:"https://gsfc.georgia.gov/node/711", year:"2026–27", note:"Grades 10–12; covers tuition, mandatory fees, required books; 30 credit-hour funding cap."},
+  publix: {title:"Publix Jobs, '9 reasons to work at Publix'", url:"https://jobs.publix.com/2023/02/06/9-reasons-to-work-at-publix", year:"2023", note:"Company's own description of promote-from-within and stock ownership."},
+  cfa: {title:"Chick-fil-A press room, 2026 scholarships and 2027 applications", url:"https://www.chick-fil-a.com/press-room/2027-chick-fil-a-scholarship-applications-open", year:"2026", note:"Company's own figures."}
+};
+
+const HEADLINES = [
+  {big:"62.8%", lbl:"of new high school grads were in college that fall", sub:"Women 69.5%, men 55.4%", conf:"strong", src:"bls_hsgec"},
+  {big:"61.1%", lbl:"of college starters finished any credential within 6 years", sub:"The rest stopped out or were still enrolled", conf:"strong", src:"nsc_completion"},
+  {big:"42%", lbl:"of recent college grads work jobs that don't need a degree", sub:"Recent-grad unemployment ~5.6%", conf:"strong", src:"nyfed"},
+  {big:"$29,560", lbl:"average debt for bachelor's grads who borrowed", sub:"About 47% of grads borrowed", conf:"limited", src:"debt"},
+  {big:"$63,190", lbl:"median pay, electricians (plumbers $63,800)", sub:"No bachelor's degree required", conf:"strong", src:"oews_trades"},
+  {big:"51%", lbl:"of new businesses still operating after 5 years", sub:"78% after 1 year, 35% after 10", conf:"strong", src:"bls_bed"}
+];
+
+const EDPAYS = [
+  ["Doctoral",2307],["Professional",2294],["Master's",1876],["Bachelor's",1578],
+  ["Associate",1135],["Some college, no degree",1062],["High school diploma",966],["No diploma",770]
+];
+
+const PATHS = [
+  {
+    id:"college", name:"Four-year college", short:"College",
+    tagline:"A bachelor's degree, then work or graduate school.",
+    facts:{start:"4–6 yrs", cost:"$11,610/yr tuition (national public, in-state)", pay:"$82k median, bachelor's"},
+    looks:[
+      {when:"Year 1", text:"Full-time student. Little or no income. Choosing a major matters more than choosing a school name."},
+      {when:"Year 5", text:"Graduated (if on track) and in an early-career job, or in grad school. Debt repayment has started for the ~half who borrowed."},
+      {when:"Year 10", text:"Earnings spread widely by major. Nursing and engineering look nothing like majors with high underemployment."}
+    ],
+    fits:["Enjoys academic work and sustained reading/writing","Aims at a field that legally or practically requires a degree (teaching, nursing, engineering, law, medicine)","Can name a major or two worth testing early"],
+    grades:{
+      elem:["Read daily; reading level is the strongest early predictor of later course access","Build math fluency; it gates the advanced-math track in middle school"],
+      middle:["Ask the school how students reach accelerated math by 8th grade","Try clubs that test interests (robotics, debate, science fair)","Start a simple list: subjects they love, subjects they avoid"],
+      high:["Use Georgia Dual Enrollment (grades 10–12) to earn free college credit","Protect the HOPE GPA; know the eligibility rules early","Compare majors by outcome, not just schools by ranking","Visit at least one public and one private campus before senior year"]
+    },
+    numbers:[
+      {label:"Median weekly earnings, bachelor's degree (25+)", value:"$1,578", note:"≈ $82k/yr. High school diploma: $966 (≈ $50k)", conf:"strong", src:"bls_edpays"},
+      {label:"Six-year completion rate, all starters", value:"61.1%", note:"Part-time starters: 34.1%", conf:"strong", src:"nsc_completion"},
+      {label:"Recent grads underemployed", value:"42%", note:"Varies hugely by major", conf:"strong", src:"nyfed"},
+      {label:"Average debt among borrowers", value:"$29,560", note:"Class of 2024; ~47% borrowed", conf:"limited", src:"debt"},
+      {label:"Published tuition & fees, public 4-year in-state", value:"$11,610", note:"National. Georgia + HOPE/Zell figures to add", conf:"limited", src:"cb_tuition"}
+    ],
+    risks:["Not finishing: the cost without the credential is the worst outcome","Major choice drives underemployment more than the degree itself","Recent-grad unemployment has been running above the overall rate"],
+    resources:[["GAfutures (HOPE, Zell, Dual Enrollment)","https://www.gafutures.org"],["College Scorecard (outcomes by school and major)","https://collegescorecard.ed.gov"],["NY Fed outcomes by major","https://www.newyorkfed.org/research/college-labor-market"]]
+  },
+  {
+    id:"technical", name:"Technical college & trades", short:"Technical",
+    tagline:"A certificate, diploma or associate degree tied to a specific job.",
+    facts:{start:"Months–2 yrs", cost:"$4,050/yr (national public 2-year)", pay:"$61–64k median, core trades"},
+    looks:[
+      {when:"Year 1", text:"In a certificate or diploma program, often while working. Many short programs finish within a year."},
+      {when:"Year 5", text:"Working in the field, often licensed. Pay grows with experience and certifications."},
+      {when:"Year 10", text:"Senior tech, supervisor, or running their own shop. Self-employment is common in the trades."}
+    ],
+    fits:["Learns best by doing","Likes seeing a finished, physical result","Wants to earn sooner with less debt"],
+    grades:{
+      elem:["Let them build and fix things: Lego, kits, helping with home repairs","Practice measurement and fractions in real tasks"],
+      middle:["Look at the CTAE pathway options the high schools offer","Encourage shop, robotics, or maker-space time","Talk to tradespeople you already know about their day"],
+      high:["Pick a CTAE pathway and finish it (completers earn industry credentials)","Dual Enrollment covers TCSG courses; rising 10th graders can take career-technical courses","After the 30-hour cap, the HOPE Career Grant may fund high-demand programs","Get a summer job with a contractor or service company"]
+    },
+    numbers:[
+      {label:"Median pay, electricians", value:"$63,190", note:"Plumbers $63,800 · HVAC $61,010", conf:"strong", src:"oews_trades"},
+      {label:"Median weekly earnings, associate degree (25+)", value:"$1,135", note:"≈ $59k/yr", conf:"strong", src:"bls_edpays"},
+      {label:"TCSG 'placement' rate", value:"99%", note:"Job OR continued education. Self-reported; in-field rate is lower", conf:"self", src:"tcsg"},
+      {label:"TCSG graduates, AY2025", value:"~47,500", note:"Record high for Georgia's 22 technical colleges", conf:"self", src:"tcsg"}
+    ],
+    risks:["Physical wear and injury rates vary a lot by trade","Earnings data misses self-employed owners, so true upside may be understated","Program quality varies; check in-field placement, not just total placement"],
+    resources:[["Technical College System of Georgia","https://www.tcsg.edu"],["GAfutures: Dual Enrollment & HOPE Career Grant","https://www.gafutures.org"],["BLS Occupational Outlook Handbook","https://www.bls.gov/ooh/"]]
+  },
+  {
+    id:"apprenticeship", name:"Apprenticeship", short:"Apprenticeship",
+    tagline:"A paid job with structured training and a national credential at the end.",
+    facts:{start:"Paid day one", cost:"Usually no tuition", pay:"Rises in steps to journey-level"},
+    looks:[
+      {when:"Year 1", text:"Employed and paid at a percentage of full wage, with classroom hours alongside work."},
+      {when:"Year 5", text:"Most programs run 1–5 years. Completers hold a DOL certificate and journey-level pay."},
+      {when:"Year 10", text:"Journeyworker, foreman, or training the next apprentices. Some go on to contracting licenses."}
+    ],
+    fits:["Wants income and training at the same time","Handles being the new person on a crew","Is ready to commit to one employer or union for years"],
+    grades:{
+      elem:["Model following multi-step instructions and finishing projects","Visit places where things get built or repaired"],
+      middle:["Learn what a registered apprenticeship is (most families don't know)","Build reliability habits: on time, follows through"],
+      high:["Ask the school's CTE coordinator about youth apprenticeship partners","Search apprenticeship.gov by occupation and location junior year","Get a driver's license; many sponsors require one","Keep math sharp: many trade entry tests are math-heavy"]
+    },
+    numbers:[
+      {label:"Completers who stay employed", value:"93%", note:"DOL promotional figure", conf:"self", src:"dol_appr"},
+      {label:"Average starting salary after completion", value:"~$80k+", note:"DOL-cited; heavily dependent on trade and state", conf:"self", src:"dol_appr"},
+      {label:"National completion rate", value:"Not published", note:"Historically mediocre in research; showing it matters", conf:"limited", src:"dol_appr"}
+    ],
+    risks:["Many apprentices don't finish, and that number is rarely advertised","Getting accepted can be competitive or depend on who you know","Work is tied to the local construction and manufacturing economy"],
+    resources:[["apprenticeship.gov program finder","https://www.apprenticeship.gov"],["Technical College System of Georgia (related instruction)","https://www.tcsg.edu"]]
+  },
+  {
+    id:"military", name:"Military", short:"Military",
+    tagline:"Enlist or commission, train for a specific job, and earn benefits.",
+    facts:{start:"Paid in training", cost:"Multi-year commitment", pay:"~$66k total comp, E-4 at 4 yrs"},
+    looks:[
+      {when:"Year 1", text:"Basic training, then job school. Housing, food and health care provided or paid for."},
+      {when:"Year 5", text:"Experienced in a specialty, often E-4/E-5. Decide: reenlist or transition out."},
+      {when:"Year 10", text:"Career NCO or officer path, or a civilian career using the training and GI Bill education benefits."}
+    ],
+    fits:["Wants structure, a team, and clear advancement rules","Wants job training and education benefits without debt","Is comfortable with relocation and a service commitment"],
+    grades:{
+      elem:["Physical activity and team sports build the fitness baseline","Talk with family members or neighbors who served"],
+      middle:["Consider JROTC information nights at the high schools","Keep grades steady; enlistment and officer paths both check them"],
+      high:["Take the ASVAB (often offered free at school); scores decide job options","Compare branches by the actual jobs, not just the branch","Explore ROTC scholarships or service academies if college + commission fits","Stay clear of legal and medical issues that can disqualify"]
+    },
+    numbers:[
+      {label:"Basic pay, E-1 (2026)", value:"$28,884/yr", note:"$2,407/month, before allowances", conf:"strong", src:"dfas"},
+      {label:"Total military compensation, E-4 at 4 years", value:"~$66,500", note:"Basic pay + tax-free housing & food + tax advantage", conf:"limited", src:"rmc"}
+    ],
+    risks:["Commitment is binding; leaving early is hard","Deployment, relocation, and physical risk depend on the job","Civilian translation of some military jobs is weaker than others"],
+    resources:[["Today's Military (DoD, all branches)","https://www.todaysmilitary.com"],["DFAS military pay tables","https://www.dfas.mil/MilitaryMembers/payentitlements/Pay-Tables/"]]
+  },
+  {
+    id:"work", name:"Work path", short:"Work path",
+    tagline:"Start at a company and climb, with employer benefits doing some of the lifting.",
+    facts:{start:"Immediately", cost:"None", pay:"$44–49k median, front-line supervisors"},
+    looks:[
+      {when:"Year 1", text:"Entry-level, often part-time while in high school. The first goal is full-time status and a reputation for reliability."},
+      {when:"Year 5", text:"Shift lead or department manager. Some employers add stock, tuition aid, or scholarships."},
+      {when:"Year 10", text:"Assistant or store/restaurant manager at strong companies. Getting there usually takes a decade or more."}
+    ],
+    fits:["Wants to earn now and learn on the job","Is people-oriented and steady","Values a known company culture and benefits"],
+    grades:{
+      elem:["Chores with real responsibility build the habit employers pay for","Practice talking to adults: ordering, asking questions, thanking"],
+      middle:["Pet-sitting, yard work, or helping a family business","Learn basic money skills: paycheck, budget, saving"],
+      high:["First job at 15–16 at a company with a known ladder","Ask in the interview what promotion looks like and how long it takes","Use employer education benefits while working","Track accomplishments; they become the promotion case"]
+    },
+    numbers:[
+      {label:"Median pay, first-line supervisors of retail workers", value:"$48,520", note:"Projected −5% jobs 2024–34", conf:"limited", src:"oews_work"},
+      {label:"Median pay, first-line supervisors of food service workers", value:"$44,080", note:"Projected +6% jobs 2024–34", conf:"limited", src:"oews_work"},
+      {label:"Internal promotion rates at specific companies", value:"Not public", note:"This is where real stories have to fill the gap", conf:"limited", src:"oews_work"}
+    ],
+    examples:[
+      {name:"Publix (example, not an endorsement)", text:"Says it promotes from within; its CEO started as a bagger. Eligible associates receive company stock.", src:"publix"},
+      {name:"Chick-fil-A (example, not an endorsement)", text:"Awarded $29M+ in scholarships to 16,000+ restaurant team members in 2026. Team members can apply from their first day.", src:"cfa"}
+    ],
+    risks:["Ceiling depends heavily on the specific company","Retail supervisor jobs are projected to shrink nationally","Promotion can take 10+ years and isn't guaranteed"],
+    resources:[["Publix careers","https://jobs.publix.com"],["Chick-fil-A Remarkable Futures scholarships","https://www.chick-fil-a.com/remarkable-futures-scholarships"]]
+  },
+  {
+    id:"entrepreneurship", name:"Entrepreneurship", short:"Entrepreneurship",
+    tagline:"Build something of their own: a service, a shop, a product.",
+    facts:{start:"Any time", cost:"Varies; often savings", pay:"Highly variable"},
+    looks:[
+      {when:"Year 1", text:"Usually a side business while working or in school. Income is small and irregular."},
+      {when:"Year 5", text:"About half of new businesses are still operating. Survivors often have a few employees."},
+      {when:"Year 10", text:"About a third remain. Those that make it past year 5 survive at much higher rates."}
+    ],
+    fits:["Starts projects without being asked","Handles uncertainty and rejection","Often pairs well with a trade (electricians, plumbers and HVAC techs often open shops)"],
+    grades:{
+      elem:["Lemonade stand, bake sale, craft table: count costs and profit together","Read about local business owners"],
+      middle:["Run a small recurring business: lawn care, pet sitting, reselling","Junior Achievement programs if the school offers them"],
+      high:["Join DECA or FBLA","Take business and accounting CTAE courses","Run a real summer business and keep the books","Talk to the Georgia Small Business Development Center about a first plan"]
+    },
+    numbers:[
+      {label:"New businesses still operating after 5 years", value:"51.4%", note:"Cohort opened March 2020", conf:"strong", src:"bls_bed"},
+      {label:"After 1 year / after 10 years", value:"77.9% / 34.7%", note:"'Closed' includes sales and retirements", conf:"strong", src:"bls_bed"}
+    ],
+    risks:["Roughly half of new businesses close within five years","Income is irregular, with no employer benefits","Personal savings are often at risk"],
+    resources:[["U.S. Small Business Administration","https://www.sba.gov"],["Georgia SBDC","https://www.georgiasbdc.org"],["DECA","https://www.deca.org"],["FBLA","https://www.fbla.org"]]
+  }
+];
+
+/* =========================================================
+   RENDERING
+   ========================================================= */
+const CONF = {strong:"Strong data", limited:"Limited data", self:"Self-reported"};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pill = c => `<span class="pill ${c}">${CONF[c]}</span>`;
+const srcLink = id => `<a href="#sources" title="${esc(SOURCES[id].title)}">${esc(SOURCES[id].title.split(",")[0])}, ${esc(SOURCES[id].year)}</a>`;
+
+function legend(){
+  return `<div class="legend"><span class="muted">Data quality:</span>${pill("strong")}<span class="muted small">official, large sample</span>${pill("limited")}<span class="muted small">partial, national-only, or secondary</span>${pill("self")}<span class="muted small">reported by the program itself</span></div>`;
+}
+
+function edChart(){
+  const W=720, rowH=34, left=190, right=90, top=8;
+  const max=2400, H=top+EDPAYS.length*rowH+30;
+  const sx=v=>left+(v/max)*(W-left-right);
+  let g="";
+  [0,600,1200,1800,2400].forEach(t=>{
+    g+=`<line x1="${sx(t)}" x2="${sx(t)}" y1="${top}" y2="${H-24}" stroke="var(--line)"/>`;
+    g+=`<text class="axis" x="${sx(t)}" y="${H-6}" font-size="12" text-anchor="middle">$${t.toLocaleString()}</text>`;
+  });
+  EDPAYS.forEach(([lbl,v],i)=>{
+    const y=top+i*rowH, hi=(lbl==="Bachelor's"||lbl==="High school diploma");
+    g+=`<text x="${left-10}" y="${y+21}" font-size="14" text-anchor="end" ${hi?'font-weight="700"':''}>${esc(lbl)}</text>`;
+    g+=`<rect x="${left}" y="${y+6}" width="${sx(v)-left}" height="22" rx="4" fill="${hi?'var(--bar-hi)':'var(--bar)'}"/>`;
+    g+=`<text x="${sx(v)+8}" y="${y+22}" font-size="14" font-weight="700">$${v.toLocaleString()}</text>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Median weekly earnings by education, 2025">${g}</svg>`;
+}
+
+function home(){
+  return `<div class="stack">
+  <section>
+    <div class="eyebrow">For Georgia parents · K–12</div>
+    <h1>Every path after high school, measured the same way.</h1>
+    <p class="lede">College is one road. Technical school, apprenticeship, the military, working up inside a company, and starting a business are others. Here's what the numbers say about each, how solid those numbers are, and what to do at each grade to keep doors open.</p>
+  </section>
+
+  <section class="stack" style="gap:14px">
+    <div class="panel-head"><h2>The big picture</h2>${legend()}</div>
+    <div class="tiles">
+      ${HEADLINES.map(h=>`<div class="tile"><div class="big">${h.big}</div><div class="lbl">${esc(h.lbl)}</div><div class="muted small">${esc(h.sub)}</div><div class="src">${pill(h.conf)} ${srcLink(h.src)}</div></div>`).join("")}
+    </div>
+  </section>
+
+  <section class="panel chart">
+    <div class="panel-head"><div><h2>Education still pays, on average</h2><p class="muted small" style="margin-top:4px">Median weekly earnings, full-time workers 25 and over, 2025</p></div><div class="src small">${pill("strong")} ${srcLink("bls_edpays")}</div></div>
+    ${edChart()}
+    <p class="muted small" style="margin-top:12px;max-width:72ch">Averages hide a lot. Earnings depend more on field than level: electricians and plumbers out-earn many bachelor's holders, and 42% of recent grads work jobs that don't need their degree. People who earn degrees also differ from those who don't, so the gap isn't caused by the degree alone.</p>
+  </section>
+
+  <section class="stack" style="gap:14px">
+    <div class="panel-head"><h2>Explore the paths</h2><span style="display:flex;gap:16px;flex-wrap:wrap"><a href="#compare" class="back">See all six side by side →</a><a href="#calculator" class="back">Try the what-if calculator →</a></span></div>
+    <div class="cards">
+      ${PATHS.map(p=>`<a class="card" href="#${p.id}"><h3>${esc(p.name)}</h3><p class="muted">${esc(p.tagline)}</p>
+        <div class="facts"><span>Starts earning: <b>${esc(p.facts.start)}</b></span><span>Cost: <b>${esc(p.facts.cost)}</b></span><span>Pay: <b>${esc(p.facts.pay)}</b></span></div>
+        <span class="go">What this path looks like →</span></a>`).join("")}
+    </div>
+  </section>
+  </div>`;
+}
+
+function compare(){
+  const rows = PATHS.map(p=>{
+    const conf = p.numbers.map(n=>n.conf);
+    const worst = conf.includes("self")?"self":conf.includes("limited")?"limited":"strong";
+    return `<tr><td><a href="#${p.id}">${esc(p.name)}</a></td><td>${esc(p.facts.start)}</td><td>${esc(p.facts.cost)}</td><td class="num">${esc(p.facts.pay)}</td><td>${esc(p.risks[0])}</td><td>${pill(worst)}</td></tr>`;
+  }).join("");
+  return `<div class="stack">
+    <section><a class="back" href="#home">← Overview</a><h1 style="margin-top:10px">Compare paths</h1><p class="lede">Same measures for every path. The data-quality column shows the weakest number behind each row, so thinner evidence is easy to spot.</p></section>
+    ${legend()}
+    <div class="tablewrap"><table>
+      <thead><tr><th>Path</th><th>Starts earning</th><th>Upfront cost</th><th>Typical pay</th><th>Biggest risk</th><th>Weakest data</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+    <div class="callout"><b>Read across rows carefully.</b> Pay figures come from different sources and groups of workers (median by education level, by occupation, or military pay tables). They're useful for a rough picture, not an exact ranking.</div>
+  </div>`;
+}
+
+function pathPage(p){
+  return `<div class="stack">
+    <section><a class="back" href="#home">← All paths</a>
+      <div class="eyebrow" style="margin-top:12px">Path</div><h1>${esc(p.name)}</h1><p class="lede">${esc(p.tagline)}</p></section>
+
+    <section class="stack" style="gap:14px"><h2>What it looks like</h2>
+      <div class="timeline">${p.looks.map(l=>`<div class="yr"><div class="when">${esc(l.when)}</div><p>${esc(l.text)}</p></div>`).join("")}</div>
+    </section>
+
+    <section class="two">
+      <div class="panel"><h2 style="margin-bottom:10px">Who it tends to fit</h2><ul class="clean">${p.fits.map(f=>`<li>${esc(f)}</li>`).join("")}</ul><p class="muted small" style="margin-top:12px">These describe tendencies, not a verdict on any one kid.</p></div>
+      <div class="panel"><h2 style="margin-bottom:10px">Honest downsides</h2><ul class="clean">${p.risks.map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div>
+    </section>
+
+    <section class="stack" style="gap:14px"><h2>Keep this door open, grade by grade</h2>
+      <div class="grades">
+        ${[["elem","Elementary","K–5"],["middle","Middle school","6–8"],["high","High school","9–12"]].map(([k,t,b])=>`<div class="grade"><h3>${t} <span class="band">${b}</span></h3><ul class="clean">${p.grades[k].map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}
+      </div>
+    </section>
+
+    <section class="panel"><div class="panel-head"><h2>The numbers</h2>${legend()}</div>
+      <div class="numrows">${p.numbers.map(n=>`<div class="numrow"><div><div style="font-weight:600">${esc(n.label)}</div><div class="n">${esc(n.note)}</div></div><div class="v">${esc(n.value)}</div><div style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">${pill(n.conf)}<span class="small">${srcLink(n.src)}</span></div></div>`).join("")}</div>
+    </section>
+
+    ${p.examples?`<section class="stack" style="gap:14px"><h2>Company examples</h2><div class="two">${p.examples.map(e=>`<div class="panel"><h3>${esc(e.name)}</h3><p style="margin-top:6px">${esc(e.text)}</p><p class="small" style="margin-top:8px">${pill("self")} ${srcLink(e.src)}</p></div>`).join("")}</div>
+      <div class="callout ok">Coming next: short profiles of real people from Georgia who took this path. Where the data is thin, their stories carry the most weight.</div></section>`:""}
+
+    <section class="panel"><h2 style="margin-bottom:10px">Resources</h2><ul class="clean">${p.resources.map(([n,u])=>`<li><a href="${u}" target="_blank" rel="noopener">${esc(n)}</a></li>`).join("")}</ul>
+      <p class="muted small" style="margin-top:10px">Forsyth County–specific programs and contacts will go here in the next version.</p></section>
+  </div>`;
+}
+
+function sources(){
+  return `<div class="stack">
+    <section><a class="back" href="#home">← Overview</a><h1 style="margin-top:10px">Sources &amp; method</h1>
+    <p class="lede">Each number on this site comes from one of these sources. Different sources measure different groups of people in different years, so we show each separately rather than chaining them into one funnel.</p></section>
+    ${legend()}
+    <div class="srcs">${Object.entries(SOURCES).map(([id,s])=>`<div class="s"><div class="id">${esc(id)} · ${esc(s.year)}</div><div style="font-weight:700"><a href="${s.url}" target="_blank" rel="noopener">${esc(s.title)}</a></div><p class="muted small" style="margin-top:4px">${esc(s.note)}</p></div>`).join("")}</div>
+    <div class="callout"><b>Known gaps in this prototype:</b> most figures are national; Georgia-specific medians, TCSG in-field placement by program, apprenticeship completion rates, and Georgia tuition after HOPE are still to add. Several figures came through secondary compilations and are marked "Limited" until checked against the original tables.</div>
+  </div>`;
+}
+
+/* =========================================================
+   CALCULATOR — theoretical projections, today's dollars
+   ========================================================= */
+const PRESETS = {
+  work:{label:"Restaurant work path → manager (e.g., Chick-fil-A)",
+    phases:[[16,12000],[18,34000],[22,44080],[30,59440]], raise:0.5,
+    saveStart:16, savePct:10, debt:0, rate:6.5, term:10, school:[18,22],
+    note:"Part-time in high school, full-time at 18, supervisor by 22 (BLS food-service supervisor median $44,080), manager by 30 (BLS food service manager median ~$59,440). Timing is an assumption."},
+  college:{label:"Four-year college → degree job",
+    phases:[[16,4000],[18,6000],[22,60000],[30,82000]], raise:1,
+    saveStart:22, savePct:10, debt:29560, rate:6.5, term:10, school:[18,22],
+    note:"Summer/part-time work in school, $60k starting salary (assumption), rising to the BLS bachelor's median (~$82k) by 30. Debt = average for borrowers ($29,560)."},
+  trades:{label:"Apprenticeship → licensed trade",
+    phases:[[16,6000],[18,38000],[22,63190],[30,70000]], raise:0.5,
+    saveStart:18, savePct:10, debt:0, rate:6.5, term:10, school:[18,22],
+    note:"Paid apprentice from 18, journey-level by 22 (BLS electrician median $63,190), modest growth after. No tuition debt assumed."},
+  military:{label:"Military enlistment → civilian career",
+    phases:[[16,4000],[18,33000],[22,60000],[30,68000]], raise:0.5,
+    saveStart:18, savePct:10, debt:0, rate:6.5, term:10, school:[18,22],
+    note:"E-1 basic pay plus food allowance at 18, ~E-4 total compensation by 22, then a civilian job using the training. Assumption-heavy."}
+};
+const CALC = {
+  r:5, end:65, loanFromSavings:false,
+  A: JSON.parse(JSON.stringify({key:"work", ...PRESETS.work})),
+  B: JSON.parse(JSON.stringify({key:"college", ...PRESETS.college}))
+};
+
+function simulate(p, r, endAge, loanFromSavings){
+  const out=[]; let port=0, loan=0, cumInc=0, early=0;
+  const rr=r/100, lr=p.rate/100;
+  const [s0,s1]=p.school, yrs=Math.max(1,s1-s0);
+  let payment=0;
+  const phases=[...p.phases].sort((a,b)=>a[0]-b[0]);
+  for(let age=16; age<=endAge; age++){
+    // income
+    let ph=phases[0]; for(const x of phases){ if(age>=x[0]) ph=x; }
+    const income = age<ph[0] ? 0 : ph[1]*Math.pow(1+p.raise/100, age-ph[0]);
+    // loans: borrow evenly during school, interest accrues, then amortize
+    loan *= (1+lr);
+    if(p.debt>0 && age>=s0 && age<s1) loan += p.debt/yrs;
+    let pay=0;
+    if(p.debt>0 && age===s1){ payment = lr===0 ? loan/p.term : loan*lr/(1-Math.pow(1+lr,-p.term)); }
+    if(p.debt>0 && age>=s1 && loan>0.5){ pay=Math.min(payment, loan); loan-=pay; }
+    // savings
+    let contrib = age>=p.saveStart ? income*p.savePct/100 : 0;
+    if(loanFromSavings) contrib=Math.max(0, contrib-pay);
+    port = port*(1+rr) + contrib;
+    if(age<22) early += contrib*Math.pow(1+rr, endAge-age);
+    cumInc += income;
+    out.push({age, income, port, loan, net:port-loan, cumInc, pay});
+  }
+  return {rows:out, early};
+}
+
+const money = v => { const a=Math.abs(v), s=v<0?"−":""; return a>=1e6? s+"$"+(a/1e6).toFixed(2)+"M" : a>=1e4? s+"$"+Math.round(a/1e3)+"k" : s+"$"+Math.round(a).toLocaleString(); };
+
+function profForm(id){
+  const p=CALC[id];
+  const opts=Object.entries(PRESETS).map(([k,v])=>`<option value="${k}" ${p.key===k?"selected":""}>${esc(v.label)}</option>`).join("");
+  return `<div class="prof ${id==="B"?"b":""}">
+    <h3><span class="dot" aria-hidden="true"></span>Profile ${id}</h3>
+    <label class="f" for="${id}-preset">Start from a path<select id="${id}-preset" data-p="${id}" data-k="preset">${opts}</select></label>
+    <p class="muted small">${esc(PRESETS[p.key].note)}</p>
+    <fieldset><legend>Income by age (today's dollars)</legend>
+      ${p.phases.map((ph,i)=>`<div class="phase"><label class="f" for="${id}-pa${i}"><span class="h">From age</span><input type="number" id="${id}-pa${i}" min="14" max="64" value="${ph[0]}" data-p="${id}" data-k="pa" data-i="${i}"></label><label class="f" for="${id}-ps${i}"><span class="h">Yearly income</span><input type="number" id="${id}-ps${i}" min="0" step="1000" value="${ph[1]}" data-p="${id}" data-k="ps" data-i="${i}"></label></div>`).join("")}
+      <div class="fgrid" style="margin-top:10px"><label class="f" for="${id}-raise">Raise per year after each step (%)<input type="number" id="${id}-raise" step="0.25" value="${p.raise}" data-p="${id}" data-k="raise"></label></div>
+    </fieldset>
+    <fieldset><legend>Saving &amp; investing</legend><div class="fgrid">
+      <label class="f" for="${id}-savePct">Invest % of income<input type="number" id="${id}-savePct" min="0" max="80" value="${p.savePct}" data-p="${id}" data-k="savePct"></label>
+      <label class="f" for="${id}-saveStart">Start investing at age<input type="number" id="${id}-saveStart" min="14" max="64" value="${p.saveStart}" data-p="${id}" data-k="saveStart"></label>
+    </div></fieldset>
+    <fieldset><legend>Student debt</legend><div class="fgrid">
+      <label class="f" for="${id}-debt">Total borrowed<input type="number" id="${id}-debt" min="0" step="1000" value="${p.debt}" data-p="${id}" data-k="debt"></label>
+      <label class="f" for="${id}-rate">Interest %<input type="number" id="${id}-rate" min="0" step="0.1" value="${p.rate}" data-p="${id}" data-k="rate"></label>
+      <label class="f" for="${id}-term">Repay over (yrs)<input type="number" id="${id}-term" min="1" max="30" value="${p.term}" data-p="${id}" data-k="term"></label>
+      <label class="f" for="${id}-s1">School ends at age<input type="number" id="${id}-s1" min="17" max="40" value="${p.school[1]}" data-p="${id}" data-k="s1"></label>
+    </div></fieldset>
+  </div>`;
+}
+
+function calculator(){
+  return `<div class="stack">
+    <section><a class="back" href="#home">← Overview</a><h1 style="margin-top:10px">What-if calculator</h1>
+      <p class="lede">Build two paths and see how income, investing, and debt add up over a working life. It's a thinking tool, not a forecast: every input is an assumption you can change.</p></section>
+    <section class="panel"><div class="globals">
+      <label class="f" for="g-r">Investment return per year (%)<span class="h">After inflation. Stock market long-run is often cited ~5–7%.</span><input type="number" id="g-r" step="0.5" min="0" max="12" value="${CALC.r}" data-g="r"></label>
+      <label class="f" for="g-end">Project through age<input type="number" id="g-end" min="30" max="75" value="${CALC.end}" data-g="end"></label>
+      <label class="chk" for="g-loan"><input type="checkbox" id="g-loan" data-g="loan" ${CALC.loanFromSavings?"checked":""}> Loan payments come out of the money they'd otherwise invest</label>
+    </div></section>
+    <div class="calc-profiles">${profForm("A")}${profForm("B")}</div>
+    <div id="calc-out"></div>
+    <div class="callout"><b>What this leaves out.</b> Taxes, emergencies, job loss, and market crashes; employer benefits like Publix stock or 401(k) matches; scholarships and HOPE; and the fact that a higher earner can choose to save more. Returns are smooth averages; real markets aren't. All figures are in today's dollars.</div>
+  </div>`;
+}
+
+function calcChart(a,b){
+  const W=760,H=320,L=64,R=20,T=16,Bm=34;
+  const all=[...a.rows,...b.rows].map(x=>x.net);
+  let max=Math.max(...all,1), min=Math.min(...all,0);
+  const step=niceStep((max-min)/5); max=Math.ceil(max/step)*step; min=Math.floor(min/step)*step;
+  const a0=16,a1=CALC.end;
+  const sx=v=>L+(v-a0)/(a1-a0)*(W-L-R), sy=v=>T+(max-v)/(max-min)*(H-T-Bm);
+  let g="";
+  for(let v=min; v<=max+1; v+=step){ g+=`<line x1="${L}" x2="${W-R}" y1="${sy(v)}" y2="${sy(v)}" stroke="var(--line)" ${v===0?'stroke-width="2"':''}/><text class="axis" x="${L-8}" y="${sy(v)+4}" font-size="12" text-anchor="end">${money(v)}</text>`; }
+  for(let t=20;t<=a1;t+=5){ if(t<a0)continue; g+=`<text class="axis" x="${sx(t)}" y="${H-10}" font-size="12" text-anchor="middle">${t}</text>`; }
+  const line=(rows,c)=>{ const d=rows.map((x,i)=>`${i?"L":"M"}${sx(x.age).toFixed(1)},${sy(x.net).toFixed(1)}`).join(""); const e=rows[rows.length-1];
+    return `<path d="${d}" fill="none" stroke="${c}" stroke-width="3" stroke-linejoin="round"/><circle cx="${sx(e.age)}" cy="${sy(e.net)}" r="5" fill="${c}"/>`; };
+  g+=line(a.rows,"var(--a)")+line(b.rows,"var(--b)");
+  g+=`<text class="axis" x="${(L+W-R)/2}" y="${H}" font-size="12" text-anchor="middle" dy="-0">Age</text>`;
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Projected net worth by age for both profiles">${g}</svg>`;
+}
+function niceStep(raw){ const p=Math.pow(10,Math.floor(Math.log10(raw||1))); const n=raw/p; return (n<=1?1:n<=2?2:n<=5?5:10)*p; }
+
+function renderCalc(){
+  const el=document.getElementById("calc-out"); if(!el) return;
+  const a=simulate(CALC.A,CALC.r,CALC.end,CALC.loanFromSavings), b=simulate(CALC.B,CALC.r,CALC.end,CALC.loanFromSavings);
+  const at=(s,age)=>s.rows.find(x=>x.age===age)||s.rows[s.rows.length-1];
+  const marks=[22,30,45,CALC.end].filter((v,i,arr)=>v<=CALC.end && arr.indexOf(v)===i);
+  // crossover: last age where the lead changes
+  let cross=null; for(let i=1;i<a.rows.length;i++){ const d0=a.rows[i-1].net-b.rows[i-1].net, d1=a.rows[i].net-b.rows[i].net; if((d0<0)!==(d1<0)) cross={age:a.rows[i].age, leader:d1>0?"A":"B"}; }
+  const endA=at(a,CALC.end), endB=at(b,CALC.end);
+  const leader = endA.net>=endB.net?"A":"B", gap=Math.abs(endA.net-endB.net);
+  const earlyP = a.early>=b.early ? ["A",a,endA] : ["B",b,endB];
+  const earlyShare = earlyP[2].port>0 ? Math.round(earlyP[1].early/earlyP[2].port*100) : 0;
+  const nm=id=>`<b class="k${id.toLowerCase()}">Profile ${id}</b>`;
+  let ins = `By age ${CALC.end}, ${nm(leader)} is ahead by about <b>${money(gap)}</b> in projected net worth.`;
+  if(cross) ins += ` The lead last changed hands at age <b>${cross.age}</b>, when ${nm(cross.leader)} pulled ahead.`;
+  if(earlyP[1].early>1000) ins += ` For ${nm(earlyP[0])}, money invested <b>before age 22</b> grows to about <b>${money(earlyP[1].early)}</b> by ${CALC.end}, roughly ${earlyShare}% of that portfolio. That is the early-start effect.`;
+  el.innerHTML = `<div class="stack" style="gap:14px">
+    <section class="panel chart"><div class="panel-head"><div><h2>Projected net worth</h2><p class="muted small" style="margin-top:4px">Investments minus student loan balance, today's dollars</p></div>
+      <div class="legend"><span><span class="kb" style="color:var(--a)">●</span> Profile A</span><span><span style="color:var(--b)">●</span> Profile B</span></div></div>
+      ${calcChart(a,b)}
+      <p class="insight" style="margin-top:12px">${ins}</p></section>
+    <div class="results">${marks.map(m=>{const x=at(a,m),y=at(b,m);return `<div class="res"><div class="k">At age ${m}</div>
+      <div class="row"><span class="ka">A net worth</span><b>${money(x.net)}</b></div>
+      <div class="row"><span class="kb">B net worth</span><b>${money(y.net)}</b></div>
+      <div class="row small muted"><span>Earned so far A / B</span><span>${money(x.cumInc)} / ${money(y.cumInc)}</span></div>
+      ${(x.loan>1||y.loan>1)?`<div class="row small muted"><span>Loan left A / B</span><span>${money(x.loan)} / ${money(y.loan)}</span></div>`:""}</div>`;}).join("")}</div>
+  </div>`;
+}
+
+function bindCalc(){
+  const v=document.getElementById("view");
+  v.oninput = v.onchange = e=>{
+    const t=e.target; const P=t.dataset.p, k=t.dataset.k, G=t.dataset.g;
+    if(G){ if(G==="loan") CALC.loanFromSavings=t.checked; else { const n=parseFloat(t.value); if(!isNaN(n)) CALC[G]= G==="end"? Math.min(75,Math.max(30,Math.round(n))) : n; } renderCalc(); return; }
+    if(!P) return;
+    const p=CALC[P];
+    if(k==="preset"){ if(e.type!=="change") return; CALC[P]=JSON.parse(JSON.stringify({key:t.value,...PRESETS[t.value]})); route(true); return; }
+    const n=parseFloat(t.value); if(isNaN(n)) return;
+    if(k==="pa") p.phases[+t.dataset.i][0]=n;
+    else if(k==="ps") p.phases[+t.dataset.i][1]=n;
+    else if(k==="s1") p.school[1]=n;
+    else p[k]=n;
+    renderCalc();
+  };
+}
+
+function route(keepScroll){
+  const h = (location.hash||"#home").slice(1);
+  const v = document.getElementById("view");
+  const p = PATHS.find(x=>x.id===h);
+  v.oninput = v.onchange = null;
+  v.innerHTML = h==="compare"?compare(): h==="sources"?sources(): h==="calculator"?calculator(): p?pathPage(p): home();
+  if(h==="calculator"){ bindCalc(); renderCalc(); }
+  document.querySelectorAll("nav.main a").forEach(a=>{
+    const t=a.getAttribute("href").slice(1);
+    if(t===h || (t==="home" && !["compare","sources","calculator"].includes(h))) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");
+  });
+  document.title = (p? p.name+" · " : h==="compare"?"Compare paths · ": h==="sources"?"Sources · ": h==="calculator"?"Calculator · ":"") + "Paths Forward Georgia";
+  if(keepScroll!==true) window.scrollTo(0,0);
+}
+window.addEventListener("hashchange", ()=>route());
+route();
+</script>
+</body>
+</html>
