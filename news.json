@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T20:21+00:00",
+ "updated": "2026-11-07T16:50+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -102,7 +102,360 @@
    ],
    "note": "The official 10-year outlook by occupation. Next edition expected in late summer.",
    "pinned": true
+  },
+  {
+   "title": "October 2026 Jobs Report: Some Tarnish Beneath the Headline Shine",
+   "url": "https://hiringlab.indeed.com/2026/11/06/october-2026-jobs-report/",
+   "date": "2026-11-06",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Q3 2026 Productivity and Costs Release: Doing More with Less",
+   "url": "https://hiringlab.indeed.com/2026/11/05/q3-2026-productivity-and-costs/",
+   "date": "2026-11-05",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "September 2026 JOLTS Report: Eerily Quiet",
+   "url": "https://hiringlab.indeed.com/2026/11/03/september-2026-jolts-report-eerily-quiet/",
+   "date": "2026-11-03",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "How Do Banking Supervisors Deal with Failing Banks?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/11/how-do-banking-supervisors-deal-with-failing-banks/",
+   "date": "2026-11-02",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
+   "title": "Majorities in Both Parties Say Media Criticism Keeps Politicians in Check",
+   "url": "https://www.pewresearch.org/short-reads/2026/11/02/majorities-in-both-parties-say-media-criticism-keeps-politicians-in-check/",
+   "date": "2026-11-02",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": []
+  },
+  {
+   "title": "Evaluating New LinkedIn Labor Market Tightness Indicators",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/10/evaluating-new-linkedin-labor-market-tightness-indicators/",
+   "date": "2026-10-30",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "work"
+   ]
+  },
+  {
+   "title": "Q3 2026 Employment Cost Index: Rising Healthcare Costs Keep Haunting Employers",
+   "url": "https://hiringlab.indeed.com/2026/10/30/q3-2026-employment-cost-index/",
+   "date": "2026-10-30",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Gas Prices Are High Now, but for Many Americans They Were Even Higher in the Past",
+   "url": "https://www.pewresearch.org/short-reads/2026/10/30/gas-prices-are-high-now-but-for-many-americans-they-were-even-higher-in-the-past/",
+   "date": "2026-10-30",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "work"
+   ]
+  },
+  {
+   "title": "What is your civic personality?",
+   "url": "https://www.pewresearch.org/newsletter/the-briefing/the-briefing-10-29-2026/",
+   "date": "2026-10-29",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "The 2026 Midterms Will Be Uniquely Difficult for Polls",
+   "url": "https://www.pewresearch.org/short-reads/2026/10/29/the-2026-midterms-will-be-uniquely-difficult-for-polls/",
+   "date": "2026-10-29",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "Americans Are Open to AI in Healthcare, but Want Humans Making Final Calls",
+   "url": "https://www.pewresearch.org/science/2026/10/29/americans-are-open-to-ai-in-healthcare-but-want-humans-making-final-calls/",
+   "date": "2026-10-29",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "October 2026 FOMC Reaction: A Waiting Game",
+   "url": "https://hiringlab.indeed.com/2026/10/28/october-2026-fomc-reaction-a-waiting-game/",
+   "date": "2026-10-28",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Few Americans Say They Are Asking AI Chatbots for 2026 Election Information",
+   "url": "https://www.pewresearch.org/short-reads/2026/10/23/few-americans-say-they-are-asking-ai-chatbots-for-2026-election-information/",
+   "date": "2026-10-23",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "US Labor Market Snapshot — October 2026",
+   "url": "https://hiringlab.indeed.com/2026/10/22/us-labor-market-snapshot-october-2026/",
+   "date": "2026-10-22",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": [
+    "work"
+   ]
+  },
+  {
+   "title": "Women, Work and Caregiving Through the Arc of Family Life",
+   "url": "https://www.pewresearch.org/social-trends/2026/10/22/women-work-and-caregiving-through-the-arc-of-family-life/",
+   "date": "2026-10-22",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": []
+  },
+  {
+   "title": "Men Are Experiencing More Job Growth Than Women in AI-Exposed Occupations",
+   "url": "https://www.pewresearch.org/short-reads/2026/10/22/men-are-experiencing-more-job-growth-than-women-in-ai-exposed-occupations/",
+   "date": "2026-10-22",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "college",
+    "ai"
+   ]
+  },
+  {
+   "title": "News Platform Fact Sheet",
+   "url": "https://www.pewresearch.org/journalism/fact-sheet/news-platform-fact-sheet/",
+   "date": "2026-10-19",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "The Gender Gap in AI",
+   "url": "https://www.pewresearch.org/short-reads/2026/10/16/the-gender-gap-in-ai/",
+   "date": "2026-10-16",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "Revenue per Worker Is Up. Are Firms Getting a Larger Share?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/10/revenue-per-worker-is-up-are-firms-getting-a-larger-share/",
+   "date": "2026-10-15",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
+   "title": "Seasonal Hiring Is Off to a Fast Start, With an Eye Toward 2027",
+   "url": "https://hiringlab.indeed.com/2026/10/15/seasonal-hiring-is-off-to-a-fast-start/",
+   "date": "2026-10-15",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Has the AI Boom Impacted the U.S. Current Account?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/10/has-the-ai-boom-impacted-the-u-s-current-account/",
+   "date": "2026-10-14",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "technical",
+    "ai"
+   ]
+  },
+  {
+   "title": "Acknowledgments",
+   "url": "https://www.pewresearch.org/social-trends/2026/10/14/economic-attitudes-acknowledgments/",
+   "date": "2026-10-14",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": []
+  },
+  {
+   "title": "Social media and democracy around the world",
+   "url": "https://www.pewresearch.org/newsletter/global/global-september-2026-newsletter/",
+   "date": "2026-10-09",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "AI Adoption and Employment Expectations: Evidence from a Survey of Small Business Owners",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/10/ai-adoption-and-employment-expectations-evidence-from-a-survey-of-small-business-owners/",
+   "date": "2026-10-08",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "entrepreneurship",
+    "ai"
+   ]
+  },
+  {
+   "title": "How Fast Do Tariffs Pass Through into Consumer Prices?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/10/how-fast-do-tariffs-pass-through-into-consumer-prices/",
+   "date": "2026-10-06",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "work"
+   ]
+  },
+  {
+   "title": "September 2026 Jobs Report: Steadiness Without a Spark",
+   "url": "https://hiringlab.indeed.com/2026/10/02/september-2026-jobs-report-steadiness-without-a-spark/",
+   "date": "2026-10-02",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Navigating Geoeconomic Risk in the U.S. Stock Market",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/10/navigating-geoeconomic-risk-in-the-u-s-stock-market/",
+   "date": "2026-10-01",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
+   "title": "Follow the Cash! Microstructure of Repo Markets",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/follow-the-cash-microstructure-of-repo-markets/",
+   "date": "2026-09-29",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
+   "title": "August 2026 JOLTS Report: Little Change, Limited Dynamism",
+   "url": "https://hiringlab.indeed.com/2026/09/29/august-2026-jolts-report/",
+   "date": "2026-09-29",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Who’s Borrowing and Lending in Repo Markets?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/whos-borrowing-and-lending-in-repo-markets/",
+   "date": "2026-09-28",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
+   "title": "Economists See Slightly Steadier Hiring Ahead, but Offer an AI Wage Warning for College Grads",
+   "url": "https://hiringlab.indeed.com/2026/09/24/q3-labor-market-outlook-survey/",
+   "date": "2026-09-24",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": [
+    "college",
+    "work",
+    "ai"
+   ]
+  },
+  {
+   "title": "Treasury Trading at the Close",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/treasury-trading-at-the-close/",
+   "date": "2026-09-22",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": []
+  },
+  {
+   "title": "Businesses Are Using AI to Transform Work, Not Cut Jobs",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/",
+   "date": "2026-09-01",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": [
+    "technical",
+    "ai"
+   ]
   }
  ],
- "sources": []
+ "sources": [
+  {
+   "name": "BLS: The Economics Daily",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "BLS: Employment Situation",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "BLS: Job Openings (JOLTS)",
+   "ok": false,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "name": "NY Fed: Liberty Street Economics",
+   "ok": true,
+   "count": 11
+  },
+  {
+   "name": "Indeed Hiring Lab",
+   "ok": true,
+   "count": 10
+  },
+  {
+   "name": "Brookings",
+   "ok": false,
+   "error": "ParseError: undefined entity: line 57, column 0"
+  },
+  {
+   "name": "Pew Research Center",
+   "ok": true,
+   "count": 12
+  },
+  {
+   "name": "Stanford Digital Economy Lab",
+   "ok": false,
+   "error": "ParseError: syntax error: line 1, column 0"
+  }
+ ]
 }
