@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T18:41+00:00",
+ "updated": "2026-11-11T18:42+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -102,6 +102,16 @@
    ],
    "note": "The official 10-year outlook by occupation. Next edition expected in late summer.",
    "pinned": true
+  },
+  {
+   "title": "Key Facts About U.S. Data Centers",
+   "url": "https://www.pewresearch.org/short-reads/2026/11/11/key-facts-about-us-data-centers/",
+   "date": "2026-11-11",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
   },
   {
    "title": "October 2026 Jobs Report: Some Tarnish Beneath the Headline Shine",
@@ -306,16 +316,6 @@
    "source": "Pew Research Center",
    "kind": "research",
    "tags": []
-  },
-  {
-   "title": "Social media and democracy around the world",
-   "url": "https://www.pewresearch.org/newsletter/global/global-september-2026-newsletter/",
-   "date": "2026-10-09",
-   "source": "Pew Research Center",
-   "kind": "research",
-   "tags": [
-    "ai"
-   ]
   },
   {
    "title": "AI Adoption and Employment Expectations: Evidence from a Survey of Small Business Owners",
