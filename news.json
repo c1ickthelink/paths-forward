@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T18:42+00:00",
+ "updated": "2026-11-12T18:57+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -102,6 +102,16 @@
    ],
    "note": "The official 10-year outlook by occupation. Next edition expected in late summer.",
    "pinned": true
+  },
+  {
+   "title": "Expert Brief: Public Opinion on AI in Healthcare",
+   "url": "https://www.pewresearch.org/2026/11/11/expert-brief-public-opinion-on-ai-in-healthcare/",
+   "date": "2026-11-11",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
   },
   {
    "title": "Key Facts About U.S. Data Centers",
@@ -308,14 +318,6 @@
     "technical",
     "ai"
    ]
-  },
-  {
-   "title": "Acknowledgments",
-   "url": "https://www.pewresearch.org/social-trends/2026/10/14/economic-attitudes-acknowledgments/",
-   "date": "2026-10-14",
-   "source": "Pew Research Center",
-   "kind": "research",
-   "tags": []
   },
   {
    "title": "AI Adoption and Employment Expectations: Evidence from a Survey of Small Business Owners",
