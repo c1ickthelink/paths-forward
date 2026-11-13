@@ -1,5 +1,5 @@
 {
- "_about": "Approved feeds for the 'What's changing' page. filter=true keeps only items matching general work/education keywords. require (optional regex, case-insensitive) keeps only items matching it. tags (optional) are added to every item from that source. BLS and Stanford DEL are not here because BLS blocks automated requests and Stanford has no feed; their key items live in pinned.json.",
+ "_about": "Approved feeds for the 'What's changing' page. filter=true keeps only items matching general work/education keywords. require (optional regex, case-insensitive) keeps only items matching it. exclude (optional regex) drops matching items, used to keep partisan politics off the page. tags (optional) are added to every item from that source. BLS and Stanford DEL are not here because BLS blocks automated requests and Stanford has no feed; their key items live in pinned.json.",
  "max_age_days": 75,
  "max_per_source": 12,
  "sources": [
@@ -14,12 +14,6 @@
    "url": "https://www.hiringlab.org/feed/",
    "kind": "data",
    "filter": false
-  },
-  {
-   "name": "Brookings",
-   "url": "https://www.brookings.edu/feed/",
-   "kind": "research",
-   "filter": true
   },
   {
    "name": "Pew Research Center",
@@ -42,55 +36,41 @@
    "url": "https://www.dol.gov/rss/releases.xml",
    "kind": "data",
    "filter": false,
-   "require": "apprentic|veteran|youth|workforce|skills|training|jobs report|employment"
+   "require": "apprentic|veteran|youth|workforce|skills|training|jobs report|employment",
+   "exclude": "\\b(Trump|Hegseth|Biden|Vance|impeach\\w*|Republicans?|Democrats?|GOP|partisan|MAGA)\\b"
   },
   {
    "name": "Military Times",
    "url": "https://www.militarytimes.com/arc/outboundfeeds/rss/?outputType=xml",
    "kind": "news",
    "filter": false,
-   "require": "recruit|enlist|GI Bill|bonus|pay\\b|ASVAB|JROTC|ROTC|transition|veteran|careers?|jobs?|training|basic training|academ(y|ies)",
+   "require": "recruit\\w*|enlist\\w*|ASVAB|JROTC|ROTC|GI Bill|basic training|boot camp|bonus(es)?|military pay|pay raise|SkillBridge|transition(ing)? (to|into) civilian|(veterans?|service ?members?|troops)\\W+(\\w+\\W+){0,6}(jobs?|employ\\w*|careers?|hiring|apprentic\\w*|skills|credential\\w*)",
    "tags": [
     "military"
-   ]
-  },
-  {
-   "name": "Syracuse IVMF (veterans' employment)",
-   "url": "https://ivmf.syracuse.edu/feed",
-   "kind": "research",
-   "filter": false,
-   "require": "employ|unemploy|career|job|workforce|transition",
-   "tags": [
-    "military"
-   ]
+   ],
+   "exclude": "\\b(Trump|Hegseth|Biden|Vance|impeach\\w*|Republicans?|Democrats?|GOP|partisan|MAGA)\\b"
   },
   {
    "name": "Military.com",
    "url": "https://www.military.com/rss-feeds/content?keyword=headlines&channel=news&type=news",
    "kind": "news",
    "filter": false,
-   "require": "recruit|enlist|GI Bill|bonus|pay\\b|ASVAB|JROTC|ROTC|transition|veteran|careers?|jobs?|training|basic training|academ(y|ies)",
+   "require": "recruit\\w*|enlist\\w*|ASVAB|JROTC|ROTC|GI Bill|basic training|boot camp|bonus(es)?|military pay|pay raise|SkillBridge|transition(ing)? (to|into) civilian|(veterans?|service ?members?|troops)\\W+(\\w+\\W+){0,6}(jobs?|employ\\w*|careers?|hiring|apprentic\\w*|skills|credential\\w*)",
    "tags": [
     "military"
-   ]
+   ],
+   "exclude": "\\b(Trump|Hegseth|Biden|Vance|impeach\\w*|Republicans?|Democrats?|GOP|partisan|MAGA)\\b"
   },
   {
    "name": "Air & Space Forces Magazine",
    "url": "https://www.airandspaceforces.com/feed/",
    "kind": "news",
    "filter": false,
-   "require": "recruit|enlist|bonus|pay\\b|ROTC|JROTC|academ(y|ies)|basic military training|BMT|retention",
+   "require": "recruit\\w*|enlist\\w*|ASVAB|JROTC|ROTC|GI Bill|basic training|boot camp|bonus(es)?|military pay|pay raise|SkillBridge|transition(ing)? (to|into) civilian|(veterans?|service ?members?|troops)\\W+(\\w+\\W+){0,6}(jobs?|employ\\w*|careers?|hiring|apprentic\\w*|skills|credential\\w*)",
    "tags": [
     "military"
-   ]
-  },
-  {
-   "name": "Jobs for the Future",
-   "url": "https://www.jff.org/feed/",
-   "kind": "research",
-   "filter": false,
-   "require": "apprentic|work-based learning|career pathways?|youth|skills",
-   "tags": []
+   ],
+   "exclude": "\\b(Trump|Hegseth|Biden|Vance|impeach\\w*|Republicans?|Democrats?|GOP|partisan|MAGA)\\b"
   },
   {
    "name": "New America",

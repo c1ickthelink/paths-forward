@@ -122,6 +122,8 @@ def main():
                     continue
                 if src.get("require") and not re.search(src["require"], hay, re.I):
                     continue
+                if src.get("exclude") and re.search(src["exclude"], hay, re.I):
+                    continue
                 # "AI" is matched case-sensitively so words like "said" never tag; the rest ignore case.
                 tags = [t for t, rx in TAGS.items() if re.search(rx, hay, 0 if t == "ai" else re.I)]
                 tags += [t for t in src.get("tags", []) if t not in tags]
