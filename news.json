@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T03:25+00:00",
+ "updated": "2026-11-13T03:26+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -243,76 +243,6 @@
    "tags": []
   },
   {
-   "title": "House passes bill to expand benefits for combat-injured veterans",
-   "url": "https://www.militarytimes.com/congress/2026/11/12/house-passes-bill-to-expand-benefits-for-combat-injured-veterans/",
-   "date": "2026-11-12",
-   "source": "Military Times",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
-  },
-  {
-   "title": "Trump claims arch at Arlington National Cemetery would honor military personnel, veterans",
-   "url": "https://www.militarytimes.com/veterans/2026/11/12/trump-claims-arch-at-arlington-national-cemetery-would-honor-military-personnel-veterans/",
-   "date": "2026-11-12",
-   "source": "Military Times",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
-  },
-  {
-   "title": "House passes sweeping veterans benefits bill with polarizing tactic",
-   "url": "https://www.militarytimes.com/news/2026/11/12/house-passes-sweeping-veterans-benefits-bill-with-polarizing-tactic/",
-   "date": "2026-11-12",
-   "source": "Military Times",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
-  },
-  {
-   "title": "Major Richard Star Act Passes House; Senate Now in Control of Two Bills With Major Implications For Veterans",
-   "url": "https://www.military.com/major-richard-star-act-passes-house-all-democrats-support-18-republicans-oppose",
-   "date": "2026-11-12",
-   "source": "Military.com",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
-  },
-  {
-   "title": "Hegseth Awards Joint Medal to Tomb Guard Who Told His Group to Be Silent at Arlington on Veterans Day",
-   "url": "https://www.military.com/hegseth-awards-a-joint-medal-to-the-tomb-guard-who-told-his-group-to-be-silent-at-arlington-on-veterans-day",
-   "date": "2026-11-12",
-   "source": "Military.com",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
-  },
-  {
-   "title": "Trump Administration Will Fund New Research on Controversial Psychedelic Drug Ibogaine",
-   "url": "https://www.military.com/trump-administration-will-fund-new-research-on-controversial-psychedelic-drug-ibogaine",
-   "date": "2026-11-12",
-   "source": "Military.com",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
-  },
-  {
-   "title": "List of 175 Republicans Who Opposed Standalone Major Richard Star Act Vote, Which Hits House Floor Thursday",
-   "url": "https://www.military.com/list-175-republicans-who-opposed-standalone-major-richard-star-act-vote-which-hits-house-floor-thursday",
-   "date": "2026-11-12",
-   "source": "Military.com",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
-  },
-  {
    "title": "Expert Brief: Public Opinion on AI in Healthcare",
    "url": "https://www.pewresearch.org/2026/11/11/expert-brief-public-opinion-on-ai-in-healthcare/",
    "date": "2026-11-11",
@@ -333,27 +263,6 @@
    ]
   },
   {
-   "title": "Veterans' Groups Seek Hegseth Impeachment Even if He Resigns",
-   "url": "https://www.military.com/veterans-groups-seek-hegseth-impeachment-even-if-he-resigns",
-   "date": "2026-11-11",
-   "source": "Military.com",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
-  },
-  {
-   "title": "US Department of Labor announces plans to update employment resources for service members transitioning to civilian life",
-   "url": "http://www.dol.gov/newsroom/releases/vets/vets20261110",
-   "date": "2026-11-10",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "apprenticeship",
-    "military"
-   ]
-  },
-  {
    "title": "US Department of Labor publishes proposed rule setting national minimum weekly work search requirement for unemployment insurance",
    "url": "http://www.dol.gov/newsroom/releases/eta/eta20261109",
    "date": "2026-11-09",
@@ -368,26 +277,6 @@
    "source": "Indeed Hiring Lab",
    "kind": "data",
    "tags": []
-  },
-  {
-   "title": "US secures labor victory in Alimentos Grole case in Mexico, advancing fair competition for American workers",
-   "url": "http://www.dol.gov/newsroom/releases/ilab/ilab20261106",
-   "date": "2026-11-06",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "technical"
-   ]
-  },
-  {
-   "title": "Secretary Sonderling statement on October jobs report",
-   "url": "http://www.dol.gov/newsroom/releases/osec/osec20261106",
-   "date": "2026-11-06",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "technical"
-   ]
   },
   {
    "title": "Q3 2026 Productivity and Costs Release: Doing More with Less",
@@ -430,18 +319,6 @@
    "source": "Pew Research Center",
    "kind": "research",
    "tags": []
-  },
-  {
-   "title": "US Department of Labor launches Registered Apprenticeship incentive payments for high-growth industries",
-   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261102",
-   "date": "2026-11-02",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "college",
-    "technical",
-    "apprenticeship"
-   ]
   },
   {
    "title": "Evaluating New LinkedIn Labor Market Tightness Indicators",
@@ -714,11 +591,6 @@
    "count": 10
   },
   {
-   "name": "Brookings",
-   "ok": false,
-   "error": "ParseError: mismatched tag: line 130, column 2"
-  },
-  {
    "name": "Pew Research Center",
    "ok": true,
    "count": 12
@@ -731,32 +603,22 @@
   {
    "name": "U.S. Department of Labor news",
    "ok": true,
-   "count": 8
+   "count": 4
   },
   {
    "name": "Military Times",
    "ok": true,
-   "count": 3
-  },
-  {
-   "name": "Syracuse IVMF (veterans' employment)",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 404: Not Found"
+   "count": 0
   },
   {
    "name": "Military.com",
    "ok": true,
-   "count": 5
+   "count": 0
   },
   {
    "name": "Air & Space Forces Magazine",
    "ok": true,
    "count": 0
-  },
-  {
-   "name": "Jobs for the Future",
-   "ok": false,
-   "error": "ParseError: syntax error: line 1, column 0"
   },
   {
    "name": "New America",
