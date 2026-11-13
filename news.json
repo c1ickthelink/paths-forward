@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T18:57+00:00",
+ "updated": "2026-11-13T03:23+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -191,6 +191,58 @@
    "pinned": true
   },
   {
+   "title": "2026 Q3 US Business-to-Business Labor Market Update",
+   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-business-to-business-labor-market-update/",
+   "date": "2026-11-12",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "2026 Q3 US Transportation Labor Market Update",
+   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-transportation-labor-market-update/",
+   "date": "2026-11-12",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "2026 Q3 US Tech Labor Market Update",
+   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-tech-labor-market-update/",
+   "date": "2026-11-12",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": [
+    "work"
+   ]
+  },
+  {
+   "title": "2026 Q3 US Healthcare Labor Market Update",
+   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-healthcare-labor-market-update/",
+   "date": "2026-11-12",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "2026 Q3 US Retail Labor Market Update",
+   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-retail-labor-market-update/",
+   "date": "2026-11-12",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": [
+    "work"
+   ]
+  },
+  {
+   "title": "Unemployment Insurance Weekly Claims Report",
+   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261112",
+   "date": "2026-11-12",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": []
+  },
+  {
    "title": "Expert Brief: Public Opinion on AI in Healthcare",
    "url": "https://www.pewresearch.org/2026/11/11/expert-brief-public-opinion-on-ai-in-healthcare/",
    "date": "2026-11-11",
@@ -211,6 +263,25 @@
    ]
   },
   {
+   "title": "US Department of Labor announces plans to update employment resources for service members transitioning to civilian life",
+   "url": "http://www.dol.gov/newsroom/releases/vets/vets20261110",
+   "date": "2026-11-10",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "apprenticeship",
+    "military"
+   ]
+  },
+  {
+   "title": "US Department of Labor publishes proposed rule setting national minimum weekly work search requirement for unemployment insurance",
+   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261109",
+   "date": "2026-11-09",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": []
+  },
+  {
    "title": "October 2026 Jobs Report: Some Tarnish Beneath the Headline Shine",
    "url": "https://hiringlab.indeed.com/2026/11/06/october-2026-jobs-report/",
    "date": "2026-11-06",
@@ -219,10 +290,38 @@
    "tags": []
   },
   {
+   "title": "US secures labor victory in Alimentos Grole case in Mexico, advancing fair competition for American workers",
+   "url": "http://www.dol.gov/newsroom/releases/ilab/ilab20261106",
+   "date": "2026-11-06",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
+   "title": "Secretary Sonderling statement on October jobs report",
+   "url": "http://www.dol.gov/newsroom/releases/osec/osec20261106",
+   "date": "2026-11-06",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
    "title": "Q3 2026 Productivity and Costs Release: Doing More with Less",
    "url": "https://hiringlab.indeed.com/2026/11/05/q3-2026-productivity-and-costs/",
    "date": "2026-11-05",
    "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Unemployment Insurance Weekly Claims Report",
+   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261105",
+   "date": "2026-11-05",
+   "source": "U.S. Department of Labor news",
    "kind": "data",
    "tags": []
   },
@@ -251,6 +350,18 @@
    "source": "Pew Research Center",
    "kind": "research",
    "tags": []
+  },
+  {
+   "title": "US Department of Labor launches Registered Apprenticeship incentive payments for high-growth industries",
+   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261102",
+   "date": "2026-11-02",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "college",
+    "technical",
+    "apprenticeship"
+   ]
   },
   {
    "title": "Evaluating New LinkedIn Labor Market Tightness Indicators",
@@ -311,6 +422,14 @@
    ]
   },
   {
+   "title": "Unemployment Insurance Weekly Claims Report",
+   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261029",
+   "date": "2026-10-29",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": []
+  },
+  {
    "title": "October 2026 FOMC Reaction: A Waiting Game",
    "url": "https://hiringlab.indeed.com/2026/10/28/october-2026-fomc-reaction-a-waiting-game/",
    "date": "2026-10-28",
@@ -326,16 +445,6 @@
    "kind": "research",
    "tags": [
     "ai"
-   ]
-  },
-  {
-   "title": "US Labor Market Snapshot — October 2026",
-   "url": "https://hiringlab.indeed.com/2026/10/22/us-labor-market-snapshot-october-2026/",
-   "date": "2026-10-22",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": [
-    "work"
    ]
   },
   {
@@ -388,14 +497,6 @@
    ]
   },
   {
-   "title": "Seasonal Hiring Is Off to a Fast Start, With an Eye Toward 2027",
-   "url": "https://hiringlab.indeed.com/2026/10/15/seasonal-hiring-is-off-to-a-fast-start/",
-   "date": "2026-10-15",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
    "title": "Has the AI Boom Impacted the U.S. Current Account?",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/10/has-the-ai-boom-impacted-the-u-s-current-account/",
    "date": "2026-10-14",
@@ -428,14 +529,6 @@
    ]
   },
   {
-   "title": "September 2026 Jobs Report: Steadiness Without a Spark",
-   "url": "https://hiringlab.indeed.com/2026/10/02/september-2026-jobs-report-steadiness-without-a-spark/",
-   "date": "2026-10-02",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
    "title": "Navigating Geoeconomic Risk in the U.S. Stock Market",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/10/navigating-geoeconomic-risk-in-the-u-s-stock-market/",
    "date": "2026-10-01",
@@ -456,12 +549,15 @@
    ]
   },
   {
-   "title": "August 2026 JOLTS Report: Little Change, Limited Dynamism",
-   "url": "https://hiringlab.indeed.com/2026/09/29/august-2026-jolts-report/",
+   "title": "Top State for Talent Award Winners Announced at Governor’s Workforce Summit",
+   "url": "https://www.tcsg.edu/top-state-for-talent-award-winners-announced-at-governors-workforce-summit/",
    "date": "2026-09-29",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
+   "source": "Technical College System of Georgia",
+   "kind": "georgia",
+   "tags": [
+    "college",
+    "technical"
+   ]
   },
   {
    "title": "Who’s Borrowing and Lending in Repo Markets?",
@@ -474,15 +570,14 @@
    ]
   },
   {
-   "title": "Economists See Slightly Steadier Hiring Ahead, but Offer an AI Wage Warning for College Grads",
-   "url": "https://hiringlab.indeed.com/2026/09/24/q3-labor-market-outlook-survey/",
-   "date": "2026-09-24",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
+   "title": "TCSG Sets New Records for Graduates, Credentials, and Job Placement",
+   "url": "https://www.tcsg.edu/tcsg-sets-new-records-for-graduates-credentials-and-job-placement/",
+   "date": "2026-09-23",
+   "source": "Technical College System of Georgia",
+   "kind": "georgia",
    "tags": [
     "college",
-    "work",
-    "ai"
+    "technical"
    ]
   },
   {
@@ -492,6 +587,28 @@
    "source": "NY Fed: Liberty Street Economics",
    "kind": "research",
    "tags": []
+  },
+  {
+   "title": "TCSG Foundation Raises More Than $700,000 at Inaugural Pathways to Graduation Gala",
+   "url": "https://www.tcsg.edu/tcsg-foundation-raises-more-than-700000-at-inaugural-pathways-to-graduation-gala/",
+   "date": "2026-09-21",
+   "source": "Technical College System of Georgia",
+   "kind": "georgia",
+   "tags": [
+    "college",
+    "technical"
+   ]
+  },
+  {
+   "title": "TCSG Approves $1.5 Million for New Dodge County College & Career Academy",
+   "url": "https://www.tcsg.edu/tcsg-approves-1-5-million-for-new-dodge-county-college-career-academy-2/",
+   "date": "2026-09-14",
+   "source": "Technical College System of Georgia",
+   "kind": "georgia",
+   "tags": [
+    "college",
+    "technical"
+   ]
   },
   {
    "title": "Businesses Are Using AI to Transform Work, Not Cut Jobs",
@@ -507,21 +624,6 @@
  ],
  "sources": [
   {
-   "name": "BLS: The Economics Daily",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
-  },
-  {
-   "name": "BLS: Employment Situation",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
-  },
-  {
-   "name": "BLS: Job Openings (JOLTS)",
-   "ok": false,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
-  },
-  {
    "name": "NY Fed: Liberty Street Economics",
    "ok": true,
    "count": 11
@@ -534,7 +636,7 @@
   {
    "name": "Brookings",
    "ok": false,
-   "error": "ParseError: undefined entity: line 57, column 0"
+   "error": "ParseError: not well-formed (invalid token): line 115, column 44"
   },
   {
    "name": "Pew Research Center",
@@ -542,9 +644,24 @@
    "count": 12
   },
   {
-   "name": "Stanford Digital Economy Lab",
+   "name": "Technical College System of Georgia",
+   "ok": true,
+   "count": 4
+  },
+  {
+   "name": "U.S. Department of Labor news",
+   "ok": true,
+   "count": 8
+  },
+  {
+   "name": "Syracuse IVMF (veterans' employment)",
    "ok": false,
-   "error": "ParseError: syntax error: line 1, column 0"
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+   "name": "Military Times",
+   "ok": true,
+   "count": 0
   }
  ]
 }
