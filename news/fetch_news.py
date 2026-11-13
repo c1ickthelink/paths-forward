@@ -13,6 +13,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
+from html.entities import name2codepoint
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -63,8 +64,20 @@ def find(el, name):
             return c
     return None
 
+XML_ENTITIES = {b"amp", b"lt", b"gt", b"quot", b"apos"}
+
+def fix_entities(xml_bytes):
+    """Some feeds (Brookings) use HTML entities like &nbsp; that strict XML rejects. Convert them to numeric refs."""
+    def rep(m):
+        name = m.group(1)
+        if name in XML_ENTITIES:
+            return m.group(0)
+        cp = name2codepoint.get(name.decode("ascii", "ignore"))
+        return b"&#%d;" % cp if cp else b""
+    return re.sub(rb"&([A-Za-z][A-Za-z0-9]{1,31});", rep, xml_bytes)
+
 def parse_feed(xml_bytes):
-    root = ET.fromstring(xml_bytes)
+    root = ET.fromstring(fix_entities(xml_bytes))
     items = []
     for el in root.iter():
         kind = local(el.tag)
@@ -105,8 +118,11 @@ def main():
                 hay = f'{it["title"]} {it["_desc"]}'
                 if src.get("filter") and not re.search(RELEVANT, hay, re.I):
                     continue
+                if src.get("require") and not re.search(src["require"], hay, re.I):
+                    continue
                 # "AI" is matched case-sensitively so words like "said" never tag; the rest ignore case.
                 tags = [t for t, rx in TAGS.items() if re.search(rx, hay, 0 if t == "ai" else re.I)]
+                tags += [t for t in src.get("tags", []) if t not in tags]
                 kept.append({
                     "title": it["title"][:220],
                     "url": it["url"],

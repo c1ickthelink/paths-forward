@@ -1,13 +1,164 @@
 {
-  "_about": "Hand-picked 'Key reads' that always show at the top of the What's changing page, regardless of age. Keep this short (6-10). date: YYYY-MM-DD, YYYY-MM, or null; note: optional short context shown under the headline.",
-  "items": [
-    {"title": "The Labor Market for Recent College Graduates", "url": "https://www.newyorkfed.org/research/college-labor-market", "source": "Federal Reserve Bank of New York", "date": null, "note": "Updated quarterly. Unemployment, underemployment, and outcomes by major for grads 22–27.", "tags": ["college"]},
-    {"title": "Do Job Postings Show Early Labor Market Effects of AI?", "url": "https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/", "source": "NY Fed: Liberty Street Economics", "date": "2026-05", "note": "Finds it hard to pin the entry-level hiring slowdown on AI alone.", "tags": ["ai", "college"]},
-    {"title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence", "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine/", "source": "Stanford Digital Economy Lab", "date": "2025-11-13", "note": "Payroll-data study of early-career workers in AI-exposed jobs; updated as new data comes in.", "tags": ["ai", "college"]},
-    {"title": "How AI may reshape career pathways to better jobs", "url": "https://www.brookings.edu/articles/how-ai-may-reshape-career-pathways-to-better-jobs/", "source": "Brookings", "date": "2026-04-02", "note": "Focuses on the 70 million workers without four-year degrees and the job ladders they climb.", "tags": ["ai", "work"]},
-    {"title": "New grads looking for work: the struggle is real", "url": "https://www.hiringlab.org/2026/04/23/new-grads-looking-for-work-the-struggle-is-real/", "source": "Indeed Hiring Lab", "date": "2026-04-23", "note": "Where postings for new graduates are and aren't holding up.", "tags": ["college", "ai"]},
-    {"title": "More Americans think AI will take people's jobs than 2 years ago", "url": "https://www.pewresearch.org/?p=356101", "source": "Pew Research Center", "date": null, "note": "Opinion survey of U.S. adults, June 22–28, 2026. Measures expectations, not outcomes.", "tags": ["ai"]},
-    {"title": "Wind turbine service technicians employment projected to grow 49.9 percent from 2024 to 2034", "url": "https://www.bls.gov/opub/ted/2026/wind-turbine-service-technicians-employment-projected-to-grow-49-9-percent-from-2024-to-2034.htm", "source": "BLS: The Economics Daily", "date": "2026-07-13", "note": "The 15 fastest-growing occupations, several in skilled trades and healthcare.", "tags": ["technical"]},
-    {"title": "Employment Projections: 2024–2034", "url": "https://www.bls.gov/news.release/ecopro.nr0.htm", "source": "Bureau of Labor Statistics", "date": "2025-08-28", "note": "The official 10-year outlook by occupation. Next edition expected in late summer.", "tags": ["college", "technical", "work"]}
-  ]
+ "_about": "Hand-picked 'Key reads' that always show at the top of the What's changing page, regardless of age. Aim for 2-4 per path tag so every filter has something. date: YYYY-MM-DD, YYYY-MM, or null; note: optional short context shown under the headline.",
+ "items": [
+  {
+   "title": "The Labor Market for Recent College Graduates",
+   "url": "https://www.newyorkfed.org/research/college-labor-market",
+   "source": "Federal Reserve Bank of New York",
+   "date": null,
+   "note": "Updated quarterly. Unemployment, underemployment, and outcomes by major for grads 22–27.",
+   "tags": [
+    "college"
+   ]
+  },
+  {
+   "title": "Do Job Postings Show Early Labor Market Effects of AI?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/05/do-job-postings-show-early-labor-market-effects-of-ai/",
+   "source": "NY Fed: Liberty Street Economics",
+   "date": "2026-05",
+   "note": "Finds it hard to pin the entry-level hiring slowdown on AI alone.",
+   "tags": [
+    "ai",
+    "college"
+   ]
+  },
+  {
+   "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+   "url": "https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine/",
+   "source": "Stanford Digital Economy Lab",
+   "date": "2025-11-13",
+   "note": "Payroll-data study of early-career workers in AI-exposed jobs; updated as new data comes in.",
+   "tags": [
+    "ai",
+    "college"
+   ]
+  },
+  {
+   "title": "How AI may reshape career pathways to better jobs",
+   "url": "https://www.brookings.edu/articles/how-ai-may-reshape-career-pathways-to-better-jobs/",
+   "source": "Brookings",
+   "date": "2026-04-02",
+   "note": "Focuses on the 70 million workers without four-year degrees and the job ladders they climb.",
+   "tags": [
+    "ai",
+    "work"
+   ]
+  },
+  {
+   "title": "New grads looking for work: the struggle is real",
+   "url": "https://www.hiringlab.org/2026/04/23/new-grads-looking-for-work-the-struggle-is-real/",
+   "source": "Indeed Hiring Lab",
+   "date": "2026-04-23",
+   "note": "Where postings for new graduates are and aren't holding up.",
+   "tags": [
+    "college",
+    "ai"
+   ]
+  },
+  {
+   "title": "More Americans think AI will take people's jobs than 2 years ago",
+   "url": "https://www.pewresearch.org/?p=356101",
+   "source": "Pew Research Center",
+   "date": null,
+   "note": "Opinion survey of U.S. adults, June 22–28, 2026. Measures expectations, not outcomes.",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "Wind turbine service technicians employment projected to grow 49.9 percent from 2024 to 2034",
+   "url": "https://www.bls.gov/opub/ted/2026/wind-turbine-service-technicians-employment-projected-to-grow-49-9-percent-from-2024-to-2034.htm",
+   "source": "BLS: The Economics Daily",
+   "date": "2026-07-13",
+   "note": "The 15 fastest-growing occupations, several in skilled trades and healthcare.",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
+   "title": "Employment Projections: 2024–2034",
+   "url": "https://www.bls.gov/news.release/ecopro.nr0.htm",
+   "source": "Bureau of Labor Statistics",
+   "date": "2025-08-28",
+   "note": "The official 10-year outlook by occupation. Next edition expected in late summer.",
+   "tags": [
+    "college",
+    "technical",
+    "work"
+   ]
+  },
+  {
+   "title": "The Impact of Registered and Unregistered Apprenticeship: Evidence from the Scaling Apprenticeship and Closing the Skills Gap Grants",
+   "url": "https://www.dol.gov/resource-library/impact-registered-and-unregistered-apprenticeship-evidence-scaling-apprenticeship",
+   "source": "U.S. Department of Labor, Chief Evaluation Office",
+   "date": "2026-04-30",
+   "note": "Independent evaluation (Urban Institute): registered apprenticeships raised employment and earnings about two years after enrollment, especially in IT, healthcare and advanced manufacturing.",
+   "tags": [
+    "apprenticeship",
+    "technical"
+   ]
+  },
+  {
+   "title": "Top State for Talent Pre-Apprenticeship and Apprenticeship Program",
+   "url": "https://www.tcsg.edu/tsap/",
+   "source": "Technical College System of Georgia",
+   "date": "2026-07",
+   "note": "Georgia's state-funded apprenticeship program, expanded and renamed in July 2026. Funds employers that create apprenticeships.",
+   "tags": [
+    "apprenticeship",
+    "technical"
+   ]
+  },
+  {
+   "title": "How Apprenticeships Can Benefit Young People and Employers Alike",
+   "url": "https://www.ncsl.org/news/details/how-apprenticeships-can-benefit-young-people-and-employers-alike",
+   "source": "National Conference of State Legislatures",
+   "date": null,
+   "note": "Youth apprenticeships for high schoolers: how they work, and why definitions vary from state to state.",
+   "tags": [
+    "apprenticeship"
+   ]
+  },
+  {
+   "title": "Apprentices by State Dashboard",
+   "url": "https://apprenticeship.gov/data-and-statistics/apprentices-by-state-dashboard",
+   "source": "U.S. Department of Labor",
+   "date": null,
+   "note": "Official counts of active apprentices and completers. Filter to Georgia.",
+   "tags": [
+    "apprenticeship"
+   ]
+  },
+  {
+   "title": "Employment Situation of Veterans — 2025",
+   "url": "https://www.bls.gov/news.release/archives/vet_04282026.htm",
+   "source": "Bureau of Labor Statistics",
+   "date": "2026-04-28",
+   "note": "Annual report on veterans' jobs and unemployment, including post-9/11 veterans.",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "Air, Space Forces hit recruitment goals, set higher 2027 targets",
+   "url": "https://www.militarytimes.com/news/recruiting/2026/10/02/air-space-forces-hit-recruitment-goals-set-higher-2027-targets/",
+   "source": "Military Times",
+   "date": "2026-10-02",
+   "note": "Every active service met its fiscal 2026 recruiting goal; Air Force and Space Force goals rise for 2027.",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "Military recruiting up as youth unemployment rises",
+   "url": "https://www.stripes.com/theaters/us/2026-11-01/military-recruiting-up-23326499.html",
+   "source": "Stars and Stripes",
+   "date": "2026-11-01",
+   "note": "Why recruiting rebounded, including a weaker youth job market, and why the Army says most young people can't qualify to serve.",
+   "tags": [
+    "military",
+    "work"
+   ]
+  }
+ ]
 }
