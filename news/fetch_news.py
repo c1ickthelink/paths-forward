@@ -74,7 +74,9 @@ def fix_entities(xml_bytes):
             return m.group(0)
         cp = name2codepoint.get(name.decode("ascii", "ignore"))
         return b"&#%d;" % cp if cp else b""
-    return re.sub(rb"&([A-Za-z][A-Za-z0-9]{1,31});", rep, xml_bytes)
+    xml_bytes = re.sub(rb"&([A-Za-z][A-Za-z0-9]{1,31});", rep, xml_bytes)
+    # Bare ampersands ("AT&T", "Q&A") are also invalid XML; escape any & that doesn't start a reference.
+    return re.sub(rb"&(?!#[0-9]+;|#x[0-9A-Fa-f]+;|[A-Za-z][A-Za-z0-9]*;)", b"&amp;", xml_bytes)
 
 def parse_feed(xml_bytes):
     root = ET.fromstring(fix_entities(xml_bytes))

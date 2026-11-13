@@ -45,8 +45,18 @@
    "require": "apprentic|veteran|youth|workforce|skills|training|jobs report|employment"
   },
   {
+   "name": "Military Times",
+   "url": "https://www.militarytimes.com/arc/outboundfeeds/rss/?outputType=xml",
+   "kind": "news",
+   "filter": false,
+   "require": "recruit|enlist|GI Bill|bonus|pay\\b|ASVAB|JROTC|ROTC|transition|veteran|careers?|jobs?|training|basic training|academ(y|ies)",
+   "tags": [
+    "military"
+   ]
+  },
+  {
    "name": "Syracuse IVMF (veterans' employment)",
-   "url": "https://ivmf.syracuse.edu/feed/",
+   "url": "https://ivmf.syracuse.edu/feed",
    "kind": "research",
    "filter": false,
    "require": "employ|unemploy|career|job|workforce|transition",
@@ -55,14 +65,40 @@
    ]
   },
   {
-   "name": "Military Times",
-   "url": "https://www.militarytimes.com/arc/outboundfeeds/rss/?outputType=xml",
+   "name": "Military.com",
+   "url": "https://www.military.com/rss-feeds/content?keyword=headlines&channel=news&type=news",
    "kind": "news",
    "filter": false,
-   "require": "recruit|enlist|GI Bill|bonus|basic pay|pay raise|ASVAB|JROTC|transition|veterans? (jobs?|employ|careers?)",
+   "require": "recruit|enlist|GI Bill|bonus|pay\\b|ASVAB|JROTC|ROTC|transition|veteran|careers?|jobs?|training|basic training|academ(y|ies)",
    "tags": [
     "military"
    ]
+  },
+  {
+   "name": "Air & Space Forces Magazine",
+   "url": "https://www.airandspaceforces.com/feed/",
+   "kind": "news",
+   "filter": false,
+   "require": "recruit|enlist|bonus|pay\\b|ROTC|JROTC|academ(y|ies)|basic military training|BMT|retention",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "name": "Jobs for the Future",
+   "url": "https://www.jff.org/feed/",
+   "kind": "research",
+   "filter": false,
+   "require": "apprentic|work-based learning|career pathways?|youth|skills",
+   "tags": []
+  },
+  {
+   "name": "New America",
+   "url": "https://www.newamerica.org/feed/",
+   "kind": "research",
+   "filter": false,
+   "require": "apprentic|work-based learning|career and technical|community college|workforce",
+   "tags": []
   }
  ]
 }
