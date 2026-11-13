@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T03:26+00:00",
+ "updated": "2026-11-13T03:27+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -263,6 +263,17 @@
    ]
   },
   {
+   "title": "US Department of Labor announces plans to update employment resources for service members transitioning to civilian life",
+   "url": "http://www.dol.gov/newsroom/releases/vets/vets20261110",
+   "date": "2026-11-10",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "apprenticeship",
+    "military"
+   ]
+  },
+  {
    "title": "US Department of Labor publishes proposed rule setting national minimum weekly work search requirement for unemployment insurance",
    "url": "http://www.dol.gov/newsroom/releases/eta/eta20261109",
    "date": "2026-11-09",
@@ -277,6 +288,26 @@
    "source": "Indeed Hiring Lab",
    "kind": "data",
    "tags": []
+  },
+  {
+   "title": "US secures labor victory in Alimentos Grole case in Mexico, advancing fair competition for American workers",
+   "url": "http://www.dol.gov/newsroom/releases/ilab/ilab20261106",
+   "date": "2026-11-06",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
+   "title": "Secretary Sonderling statement on October jobs report",
+   "url": "http://www.dol.gov/newsroom/releases/osec/osec20261106",
+   "date": "2026-11-06",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "technical"
+   ]
   },
   {
    "title": "Q3 2026 Productivity and Costs Release: Doing More with Less",
@@ -319,6 +350,18 @@
    "source": "Pew Research Center",
    "kind": "research",
    "tags": []
+  },
+  {
+   "title": "US Department of Labor launches Registered Apprenticeship incentive payments for high-growth industries",
+   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261102",
+   "date": "2026-11-02",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "college",
+    "technical",
+    "apprenticeship"
+   ]
   },
   {
    "title": "Evaluating New LinkedIn Labor Market Tightness Indicators",
@@ -603,7 +646,7 @@
   {
    "name": "U.S. Department of Labor news",
    "ok": true,
-   "count": 4
+   "count": 8
   },
   {
    "name": "Military Times",
