@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T03:23+00:00",
+ "updated": "2026-11-13T03:25+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -243,6 +243,76 @@
    "tags": []
   },
   {
+   "title": "House passes bill to expand benefits for combat-injured veterans",
+   "url": "https://www.militarytimes.com/congress/2026/11/12/house-passes-bill-to-expand-benefits-for-combat-injured-veterans/",
+   "date": "2026-11-12",
+   "source": "Military Times",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "Trump claims arch at Arlington National Cemetery would honor military personnel, veterans",
+   "url": "https://www.militarytimes.com/veterans/2026/11/12/trump-claims-arch-at-arlington-national-cemetery-would-honor-military-personnel-veterans/",
+   "date": "2026-11-12",
+   "source": "Military Times",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "House passes sweeping veterans benefits bill with polarizing tactic",
+   "url": "https://www.militarytimes.com/news/2026/11/12/house-passes-sweeping-veterans-benefits-bill-with-polarizing-tactic/",
+   "date": "2026-11-12",
+   "source": "Military Times",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "Major Richard Star Act Passes House; Senate Now in Control of Two Bills With Major Implications For Veterans",
+   "url": "https://www.military.com/major-richard-star-act-passes-house-all-democrats-support-18-republicans-oppose",
+   "date": "2026-11-12",
+   "source": "Military.com",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "Hegseth Awards Joint Medal to Tomb Guard Who Told His Group to Be Silent at Arlington on Veterans Day",
+   "url": "https://www.military.com/hegseth-awards-a-joint-medal-to-the-tomb-guard-who-told-his-group-to-be-silent-at-arlington-on-veterans-day",
+   "date": "2026-11-12",
+   "source": "Military.com",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "Trump Administration Will Fund New Research on Controversial Psychedelic Drug Ibogaine",
+   "url": "https://www.military.com/trump-administration-will-fund-new-research-on-controversial-psychedelic-drug-ibogaine",
+   "date": "2026-11-12",
+   "source": "Military.com",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "List of 175 Republicans Who Opposed Standalone Major Richard Star Act Vote, Which Hits House Floor Thursday",
+   "url": "https://www.military.com/list-175-republicans-who-opposed-standalone-major-richard-star-act-vote-which-hits-house-floor-thursday",
+   "date": "2026-11-12",
+   "source": "Military.com",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
    "title": "Expert Brief: Public Opinion on AI in Healthcare",
    "url": "https://www.pewresearch.org/2026/11/11/expert-brief-public-opinion-on-ai-in-healthcare/",
    "date": "2026-11-11",
@@ -260,6 +330,16 @@
    "kind": "research",
    "tags": [
     "ai"
+   ]
+  },
+  {
+   "title": "Veterans' Groups Seek Hegseth Impeachment Even if He Resigns",
+   "url": "https://www.military.com/veterans-groups-seek-hegseth-impeachment-even-if-he-resigns",
+   "date": "2026-11-11",
+   "source": "Military.com",
+   "kind": "news",
+   "tags": [
+    "military"
    ]
   },
   {
@@ -636,7 +716,7 @@
   {
    "name": "Brookings",
    "ok": false,
-   "error": "ParseError: not well-formed (invalid token): line 115, column 44"
+   "error": "ParseError: mismatched tag: line 130, column 2"
   },
   {
    "name": "Pew Research Center",
@@ -654,12 +734,32 @@
    "count": 8
   },
   {
+   "name": "Military Times",
+   "ok": true,
+   "count": 3
+  },
+  {
    "name": "Syracuse IVMF (veterans' employment)",
    "ok": false,
    "error": "HTTPError: HTTP Error 404: Not Found"
   },
   {
-   "name": "Military Times",
+   "name": "Military.com",
+   "ok": true,
+   "count": 5
+  },
+  {
+   "name": "Air & Space Forces Magazine",
+   "ok": true,
+   "count": 0
+  },
+  {
+   "name": "Jobs for the Future",
+   "ok": false,
+   "error": "ParseError: syntax error: line 1, column 0"
+  },
+  {
+   "name": "New America",
    "ok": true,
    "count": 0
   }
