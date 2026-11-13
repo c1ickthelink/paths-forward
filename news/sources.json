@@ -36,8 +36,7 @@
    "url": "https://www.dol.gov/rss/releases.xml",
    "kind": "data",
    "filter": false,
-   "require": "apprentic|veteran|youth|workforce|skills|training|jobs report|employment",
-   "exclude": "\\b(Trump|Hegseth|Biden|Vance|impeach\\w*|Republicans?|Democrats?|GOP|partisan|MAGA)\\b"
+   "require": "apprentic|veteran|youth|workforce|skills|training|jobs report|employment"
   },
   {
    "name": "Military Times",
