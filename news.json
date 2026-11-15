@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T17:09+00:00",
+ "updated": "2026-11-15T17:42+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -600,24 +600,13 @@
     "college",
     "technical"
    ]
-  },
-  {
-   "title": "Businesses Are Using AI to Transform Work, Not Cut Jobs",
-   "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/businesses-are-using-ai-to-transform-work-not-cut-jobs/",
-   "date": "2026-09-01",
-   "source": "NY Fed: Liberty Street Economics",
-   "kind": "research",
-   "tags": [
-    "technical",
-    "ai"
-   ]
   }
  ],
  "sources": [
   {
    "name": "NY Fed: Liberty Street Economics",
    "ok": true,
-   "count": 11
+   "count": 10
   },
   {
    "name": "Indeed Hiring Lab",
