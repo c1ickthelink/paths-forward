@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T17:42+00:00",
+ "updated": "2026-11-16T21:03+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -191,6 +191,32 @@
    "pinned": true
   },
   {
+   "title": "Can Workers Predict Job Finding and Job Loss?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/11/can-workers-predict-job-finding-and-job-loss/",
+   "date": "2026-11-16",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": []
+  },
+  {
+   "title": "US Department of Labor cites powder coating company for willful toxic substance exposures, repeat violations, proposes more than $1.6M in penalties",
+   "url": "http://www.dol.gov/newsroom/releases/osha/osha20261116",
+   "date": "2026-11-16",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "US Labor Department cites New Jersey pastry maker, staffing agency for endangering workers after 2 injuries in 3 months; proposes $351K in fines",
+   "url": "http://www.dol.gov/newsroom/releases/osha/osha20261116-0",
+   "date": "2026-11-16",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": [
+    "technical"
+   ]
+  },
+  {
    "title": "US Department of Labor honors 772 employers committed to veterans’ employment with 2026 HIRE Vets Medallion Awards",
    "url": "http://www.dol.gov/newsroom/releases/vets/vets20261113",
    "date": "2026-11-13",
@@ -274,25 +300,6 @@
    ]
   },
   {
-   "title": "US Department of Labor announces plans to update employment resources for service members transitioning to civilian life",
-   "url": "http://www.dol.gov/newsroom/releases/vets/vets20261110",
-   "date": "2026-11-10",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "apprenticeship",
-    "military"
-   ]
-  },
-  {
-   "title": "US Department of Labor publishes proposed rule setting national minimum weekly work search requirement for unemployment insurance",
-   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261109",
-   "date": "2026-11-09",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": []
-  },
-  {
    "title": "October 2026 Jobs Report: Some Tarnish Beneath the Headline Shine",
    "url": "https://hiringlab.indeed.com/2026/11/06/october-2026-jobs-report/",
    "date": "2026-11-06",
@@ -301,38 +308,10 @@
    "tags": []
   },
   {
-   "title": "US secures labor victory in Alimentos Grole case in Mexico, advancing fair competition for American workers",
-   "url": "http://www.dol.gov/newsroom/releases/ilab/ilab20261106",
-   "date": "2026-11-06",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "technical"
-   ]
-  },
-  {
-   "title": "Secretary Sonderling statement on October jobs report",
-   "url": "http://www.dol.gov/newsroom/releases/osec/osec20261106",
-   "date": "2026-11-06",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "technical"
-   ]
-  },
-  {
    "title": "Q3 2026 Productivity and Costs Release: Doing More with Less",
    "url": "https://hiringlab.indeed.com/2026/11/05/q3-2026-productivity-and-costs/",
    "date": "2026-11-05",
    "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
-   "title": "Unemployment Insurance Weekly Claims Report",
-   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261105",
-   "date": "2026-11-05",
-   "source": "U.S. Department of Labor news",
    "kind": "data",
    "tags": []
   },
@@ -540,17 +519,6 @@
    ]
   },
   {
-   "title": "Top State for Talent Award Winners Announced at Governor’s Workforce Summit",
-   "url": "https://www.tcsg.edu/top-state-for-talent-award-winners-announced-at-governors-workforce-summit/",
-   "date": "2026-09-29",
-   "source": "Technical College System of Georgia",
-   "kind": "georgia",
-   "tags": [
-    "college",
-    "technical"
-   ]
-  },
-  {
    "title": "Who’s Borrowing and Lending in Repo Markets?",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/whos-borrowing-and-lending-in-repo-markets/",
    "date": "2026-09-28",
@@ -561,52 +529,19 @@
    ]
   },
   {
-   "title": "TCSG Sets New Records for Graduates, Credentials, and Job Placement",
-   "url": "https://www.tcsg.edu/tcsg-sets-new-records-for-graduates-credentials-and-job-placement/",
-   "date": "2026-09-23",
-   "source": "Technical College System of Georgia",
-   "kind": "georgia",
-   "tags": [
-    "college",
-    "technical"
-   ]
-  },
-  {
    "title": "Treasury Trading at the Close",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/treasury-trading-at-the-close/",
    "date": "2026-09-22",
    "source": "NY Fed: Liberty Street Economics",
    "kind": "research",
    "tags": []
-  },
-  {
-   "title": "TCSG Foundation Raises More Than $700,000 at Inaugural Pathways to Graduation Gala",
-   "url": "https://www.tcsg.edu/tcsg-foundation-raises-more-than-700000-at-inaugural-pathways-to-graduation-gala/",
-   "date": "2026-09-21",
-   "source": "Technical College System of Georgia",
-   "kind": "georgia",
-   "tags": [
-    "college",
-    "technical"
-   ]
-  },
-  {
-   "title": "TCSG Approves $1.5 Million for New Dodge County College & Career Academy",
-   "url": "https://www.tcsg.edu/tcsg-approves-1-5-million-for-new-dodge-county-college-career-academy-2/",
-   "date": "2026-09-14",
-   "source": "Technical College System of Georgia",
-   "kind": "georgia",
-   "tags": [
-    "college",
-    "technical"
-   ]
   }
  ],
  "sources": [
   {
    "name": "NY Fed: Liberty Street Economics",
    "ok": true,
-   "count": 10
+   "count": 11
   },
   {
    "name": "Indeed Hiring Lab",
@@ -620,13 +555,13 @@
   },
   {
    "name": "Technical College System of Georgia",
-   "ok": true,
-   "count": 4
+   "ok": false,
+   "error": "URLError: <urlopen error timed out>"
   },
   {
    "name": "U.S. Department of Labor news",
    "ok": true,
-   "count": 7
+   "count": 5
   },
   {
    "name": "Military Times",
