@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T21:03+00:00",
+ "updated": "2026-11-17T19:51+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -519,6 +519,17 @@
    ]
   },
   {
+   "title": "Top State for Talent Award Winners Announced at Governor’s Workforce Summit",
+   "url": "https://www.tcsg.edu/top-state-for-talent-award-winners-announced-at-governors-workforce-summit/",
+   "date": "2026-09-29",
+   "source": "Technical College System of Georgia",
+   "kind": "georgia",
+   "tags": [
+    "college",
+    "technical"
+   ]
+  },
+  {
    "title": "Who’s Borrowing and Lending in Repo Markets?",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/whos-borrowing-and-lending-in-repo-markets/",
    "date": "2026-09-28",
@@ -529,12 +540,45 @@
    ]
   },
   {
+   "title": "TCSG Sets New Records for Graduates, Credentials, and Job Placement",
+   "url": "https://www.tcsg.edu/tcsg-sets-new-records-for-graduates-credentials-and-job-placement/",
+   "date": "2026-09-23",
+   "source": "Technical College System of Georgia",
+   "kind": "georgia",
+   "tags": [
+    "college",
+    "technical"
+   ]
+  },
+  {
    "title": "Treasury Trading at the Close",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/09/treasury-trading-at-the-close/",
    "date": "2026-09-22",
    "source": "NY Fed: Liberty Street Economics",
    "kind": "research",
    "tags": []
+  },
+  {
+   "title": "TCSG Foundation Raises More Than $700,000 at Inaugural Pathways to Graduation Gala",
+   "url": "https://www.tcsg.edu/tcsg-foundation-raises-more-than-700000-at-inaugural-pathways-to-graduation-gala/",
+   "date": "2026-09-21",
+   "source": "Technical College System of Georgia",
+   "kind": "georgia",
+   "tags": [
+    "college",
+    "technical"
+   ]
+  },
+  {
+   "title": "TCSG Approves $1.5 Million for New Dodge County College & Career Academy",
+   "url": "https://www.tcsg.edu/tcsg-approves-1-5-million-for-new-dodge-county-college-career-academy-2/",
+   "date": "2026-09-14",
+   "source": "Technical College System of Georgia",
+   "kind": "georgia",
+   "tags": [
+    "college",
+    "technical"
+   ]
   }
  ],
  "sources": [
@@ -555,8 +599,8 @@
   },
   {
    "name": "Technical College System of Georgia",
-   "ok": false,
-   "error": "URLError: <urlopen error timed out>"
+   "ok": true,
+   "count": 4
   },
   {
    "name": "U.S. Department of Labor news",
