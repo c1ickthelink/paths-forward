@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T19:51+00:00",
+ "updated": "2026-11-18T19:24+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -191,6 +191,82 @@
    "pinned": true
   },
   {
+   "title": "A Restless Labor Market Antsy to Move Again",
+   "url": "https://hiringlab.indeed.com/2026/11/18/a-restless-labor-market/",
+   "date": "2026-11-18",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "A National Market, Shaped by Local Dynamics",
+   "url": "https://hiringlab.indeed.com/2026/11/18/a-national-market-shaped-by-local-dynamics/",
+   "date": "2026-11-18",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Gen Z at Work: They’re Here, They’re (Surprisingly) Positive, and They’re Different",
+   "url": "https://hiringlab.indeed.com/2026/11/18/gen-z-at-work/",
+   "date": "2026-11-18",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "There is no AI Jobpocalypse, but plenty of AI-nxiety",
+   "url": "https://hiringlab.indeed.com/2026/11/18/there-is-no-ai-jobpocalypse/",
+   "date": "2026-11-18",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "Experience Wanted. But Where Do You Get It?",
+   "url": "https://hiringlab.indeed.com/2026/11/18/experience-wanted-but-where-do-you-get-it/",
+   "date": "2026-11-18",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "It’s Not Just the Paycheck: Total Compensation is Under Pressure",
+   "url": "https://hiringlab.indeed.com/2026/11/18/total-compensation-is-under-pressure/",
+   "date": "2026-11-18",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Indeed & Glassdoor’s 2027 U.S. Hiring and Worklife Trends Report",
+   "url": "https://hiringlab.indeed.com/2026/11/18/indeed-glassdoor-2027-us-hiring-and-worklife-trends-report/",
+   "date": "2026-11-18",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Indeed & Glassdoor’s 2027 U.S. Hiring and Worklife Trends Report: Consolidated Methodology",
+   "url": "https://hiringlab.indeed.com/2026/11/18/indeed-glassdoors-2027-u-s-hiring-and-worklife-trends-report-consolidated-methodology/",
+   "date": "2026-11-18",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": []
+  },
+  {
+   "title": "Battle of the Bulge veteran who enlisted at 15 dies at 98",
+   "url": "https://www.militarytimes.com/veterans/military-history/2026/11/17/battle-of-the-bulge-veteran-who-enlisted-at-15-dies-at-98/",
+   "date": "2026-11-17",
+   "source": "Military Times",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
    "title": "Can Workers Predict Job Finding and Job Loss?",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/11/can-workers-predict-job-finding-and-job-loss/",
    "date": "2026-11-16",
@@ -244,34 +320,6 @@
    "tags": []
   },
   {
-   "title": "2026 Q3 US Tech Labor Market Update",
-   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-tech-labor-market-update/",
-   "date": "2026-11-12",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": [
-    "work"
-   ]
-  },
-  {
-   "title": "2026 Q3 US Healthcare Labor Market Update",
-   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-healthcare-labor-market-update/",
-   "date": "2026-11-12",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
-   "title": "2026 Q3 US Retail Labor Market Update",
-   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-retail-labor-market-update/",
-   "date": "2026-11-12",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": [
-    "work"
-   ]
-  },
-  {
    "title": "Unemployment Insurance Weekly Claims Report",
    "url": "http://www.dol.gov/newsroom/releases/eta/eta20261112",
    "date": "2026-11-12",
@@ -300,30 +348,6 @@
    ]
   },
   {
-   "title": "October 2026 Jobs Report: Some Tarnish Beneath the Headline Shine",
-   "url": "https://hiringlab.indeed.com/2026/11/06/october-2026-jobs-report/",
-   "date": "2026-11-06",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
-   "title": "Q3 2026 Productivity and Costs Release: Doing More with Less",
-   "url": "https://hiringlab.indeed.com/2026/11/05/q3-2026-productivity-and-costs/",
-   "date": "2026-11-05",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
-   "title": "September 2026 JOLTS Report: Eerily Quiet",
-   "url": "https://hiringlab.indeed.com/2026/11/03/september-2026-jolts-report-eerily-quiet/",
-   "date": "2026-11-03",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
    "title": "How Do Banking Supervisors Deal with Failing Banks?",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/11/how-do-banking-supervisors-deal-with-failing-banks/",
    "date": "2026-11-02",
@@ -350,14 +374,6 @@
    "tags": [
     "work"
    ]
-  },
-  {
-   "title": "Q3 2026 Employment Cost Index: Rising Healthcare Costs Keep Haunting Employers",
-   "url": "https://hiringlab.indeed.com/2026/10/30/q3-2026-employment-cost-index/",
-   "date": "2026-10-30",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
   },
   {
    "title": "Gas Prices Are High Now, but for Many Americans They Were Even Higher in the Past",
@@ -400,14 +416,6 @@
    ]
   },
   {
-   "title": "October 2026 FOMC Reaction: A Waiting Game",
-   "url": "https://hiringlab.indeed.com/2026/10/28/october-2026-fomc-reaction-a-waiting-game/",
-   "date": "2026-10-28",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
    "title": "Few Americans Say They Are Asking AI Chatbots for 2026 Election Information",
    "url": "https://www.pewresearch.org/short-reads/2026/10/23/few-americans-say-they-are-asking-ai-chatbots-for-2026-election-information/",
    "date": "2026-10-23",
@@ -440,16 +448,6 @@
    "title": "News Platform Fact Sheet",
    "url": "https://www.pewresearch.org/journalism/fact-sheet/news-platform-fact-sheet/",
    "date": "2026-10-19",
-   "source": "Pew Research Center",
-   "kind": "research",
-   "tags": [
-    "ai"
-   ]
-  },
-  {
-   "title": "The Gender Gap in AI",
-   "url": "https://www.pewresearch.org/short-reads/2026/10/16/the-gender-gap-in-ai/",
-   "date": "2026-10-16",
    "source": "Pew Research Center",
    "kind": "research",
    "tags": [
@@ -595,7 +593,7 @@
   {
    "name": "Pew Research Center",
    "ok": true,
-   "count": 12
+   "count": 11
   },
   {
    "name": "Technical College System of Georgia",
@@ -610,7 +608,7 @@
   {
    "name": "Military Times",
    "ok": true,
-   "count": 0
+   "count": 1
   },
   {
    "name": "Military.com",
