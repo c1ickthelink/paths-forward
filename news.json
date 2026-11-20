@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T19:29+00:00",
+ "updated": "2026-11-20T19:06+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -191,6 +191,16 @@
    "pinned": true
   },
   {
+   "title": "McClatchy turns to AI after local newspaper layoffs",
+   "url": "https://www.pewresearch.org/newsletter/the-briefing/the-briefing-11-19-2026/",
+   "date": "2026-11-19",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
    "title": "Can AI Stand In for Human Survey-Takers?",
    "url": "https://www.pewresearch.org/newsletter/methods-and-innovation/methods-innovation-newsletter-nov-2026/",
    "date": "2026-11-19",
@@ -209,6 +219,14 @@
    "tags": [
     "ai"
    ]
+  },
+  {
+   "title": "Unemployment Insurance Weekly Claims Report",
+   "url": "http://www.dol.gov/newsroom/releases/eta/eta20261119",
+   "date": "2026-11-19",
+   "source": "U.S. Department of Labor news",
+   "kind": "data",
+   "tags": []
   },
   {
    "title": "A Restless Labor Market Antsy to Move Again",
@@ -285,16 +303,6 @@
    "tags": []
   },
   {
-   "title": "US Labor Department cites New Jersey pastry maker, staffing agency for endangering workers after 2 injuries in 3 months; proposes $351K in fines",
-   "url": "http://www.dol.gov/newsroom/releases/osha/osha20261116-0",
-   "date": "2026-11-16",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "technical"
-   ]
-  },
-  {
    "title": "US Department of Labor cites powder coating company for willful toxic substance exposures, repeat violations, proposes more than $1.6M in penalties",
    "url": "http://www.dol.gov/newsroom/releases/osha/osha20261116",
    "date": "2026-11-16",
@@ -303,14 +311,13 @@
    "tags": []
   },
   {
-   "title": "US Department of Labor honors 772 employers committed to veterans’ employment with 2026 HIRE Vets Medallion Awards",
-   "url": "http://www.dol.gov/newsroom/releases/vets/vets20261113",
-   "date": "2026-11-13",
+   "title": "US Labor Department cites New Jersey pastry maker, staffing agency for endangering workers after 2 injuries in 3 months; proposes $351K in fines",
+   "url": "http://www.dol.gov/newsroom/releases/osha/osha20261116-0",
+   "date": "2026-11-16",
    "source": "U.S. Department of Labor news",
    "kind": "data",
    "tags": [
-    "college",
-    "military"
+    "technical"
    ]
   },
   {
@@ -434,17 +441,6 @@
    "source": "Pew Research Center",
    "kind": "research",
    "tags": []
-  },
-  {
-   "title": "Men Are Experiencing More Job Growth Than Women in AI-Exposed Occupations",
-   "url": "https://www.pewresearch.org/short-reads/2026/10/22/men-are-experiencing-more-job-growth-than-women-in-ai-exposed-occupations/",
-   "date": "2026-10-22",
-   "source": "Pew Research Center",
-   "kind": "research",
-   "tags": [
-    "college",
-    "ai"
-   ]
   },
   {
    "title": "Revenue per Worker Is Up. Are Firms Getting a Larger Share?",
