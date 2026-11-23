@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T18:31+00:00",
+ "updated": "2026-11-23T22:39+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -191,6 +191,24 @@
    "pinned": true
   },
   {
+   "title": "What Do Foreign Trends Tell Us About Future U.S. Labor Force Dynamics?",
+   "url": "https://libertystreeteconomics.newyorkfed.org/2026/11/what-do-foreign-trends-tell-us-about-future-u-s-labor-force-dynamics/",
+   "date": "2026-11-23",
+   "source": "NY Fed: Liberty Street Economics",
+   "kind": "research",
+   "tags": []
+  },
+  {
+   "title": "USS Doris Miller to keep its name, Navy says",
+   "url": "https://www.militarytimes.com/news/your-military/2026/11/23/uss-doris-miller-to-keep-its-name-navy-says/",
+   "date": "2026-11-23",
+   "source": "Military Times",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
    "title": "McClatchy turns to AI after local newspaper layoffs",
    "url": "https://www.pewresearch.org/newsletter/the-briefing/the-briefing-11-19-2026/",
    "date": "2026-11-19",
@@ -309,16 +327,6 @@
    "source": "U.S. Department of Labor news",
    "kind": "data",
    "tags": []
-  },
-  {
-   "title": "US Labor Department cites New Jersey pastry maker, staffing agency for endangering workers after 2 injuries in 3 months; proposes $351K in fines",
-   "url": "http://www.dol.gov/newsroom/releases/osha/osha20261116-0",
-   "date": "2026-11-16",
-   "source": "U.S. Department of Labor news",
-   "kind": "data",
-   "tags": [
-    "technical"
-   ]
   },
   {
    "title": "2026 Q3 US Business-to-Business Labor Market Update",
@@ -571,7 +579,7 @@
   {
    "name": "NY Fed: Liberty Street Economics",
    "ok": true,
-   "count": 11
+   "count": 12
   },
   {
    "name": "Indeed Hiring Lab",
@@ -591,12 +599,12 @@
   {
    "name": "U.S. Department of Labor news",
    "ok": true,
-   "count": 4
+   "count": 3
   },
   {
    "name": "Military Times",
    "ok": true,
-   "count": 0
+   "count": 1
   },
   {
    "name": "Military.com",
