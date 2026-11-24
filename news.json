@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T22:39+00:00",
+ "updated": "2026-11-24T21:11+00:00",
  "items": [
   {
    "title": "The Labor Market for Recent College Graduates",
@@ -191,22 +191,52 @@
    "pinned": true
   },
   {
+   "title": "US Labor Market Snapshot — November 2026",
+   "url": "https://hiringlab.indeed.com/2026/11/24/us-labor-market-snapshot-november-2026/",
+   "date": "2026-11-24",
+   "source": "Indeed Hiring Lab",
+   "kind": "data",
+   "tags": [
+    "work"
+   ]
+  },
+  {
+   "title": "Can AI Research Tools Help Code Data About Restrictions on Religion?",
+   "url": "https://www.pewresearch.org/decoded/2026/11/24/can-ai-research-tools-help-code-data-about-restrictions-on-religion/",
+   "date": "2026-11-24",
+   "source": "Pew Research Center",
+   "kind": "research",
+   "tags": [
+    "ai"
+   ]
+  },
+  {
+   "title": "Jensen Huang's Nvidia Return and China's Efforts to Recruit US Troops and Steal Secrets",
+   "url": "https://www.military.com/jensen-huang-nvidia-return-and-china-efforts-recruit-us-troops-steal-secrets",
+   "date": "2026-11-24",
+   "source": "Military.com",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
+   "title": "As an Enlisted Cook, He Burned the Thanksgiving Sweet Potatoes. Now He’s a 2-Star General.",
+   "url": "https://www.airandspaceforces.com/enlisted-cook-thanksgiving-sweet-potatoes-2-star-general/",
+   "date": "2026-11-24",
+   "source": "Air & Space Forces Magazine",
+   "kind": "news",
+   "tags": [
+    "military"
+   ]
+  },
+  {
    "title": "What Do Foreign Trends Tell Us About Future U.S. Labor Force Dynamics?",
    "url": "https://libertystreeteconomics.newyorkfed.org/2026/11/what-do-foreign-trends-tell-us-about-future-u-s-labor-force-dynamics/",
    "date": "2026-11-23",
    "source": "NY Fed: Liberty Street Economics",
    "kind": "research",
    "tags": []
-  },
-  {
-   "title": "USS Doris Miller to keep its name, Navy says",
-   "url": "https://www.militarytimes.com/news/your-military/2026/11/23/uss-doris-miller-to-keep-its-name-navy-says/",
-   "date": "2026-11-23",
-   "source": "Military Times",
-   "kind": "news",
-   "tags": [
-    "military"
-   ]
   },
   {
    "title": "McClatchy turns to AI after local newspaper layoffs",
@@ -337,14 +367,6 @@
    "tags": []
   },
   {
-   "title": "2026 Q3 US Transportation Labor Market Update",
-   "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-transportation-labor-market-update/",
-   "date": "2026-11-12",
-   "source": "Indeed Hiring Lab",
-   "kind": "data",
-   "tags": []
-  },
-  {
    "title": "Expert Brief: Public Opinion on AI in Healthcare",
    "url": "https://www.pewresearch.org/2026/11/11/expert-brief-public-opinion-on-ai-in-healthcare/",
    "date": "2026-11-11",
@@ -431,24 +453,6 @@
    "tags": [
     "ai"
    ]
-  },
-  {
-   "title": "Few Americans Say They Are Asking AI Chatbots for 2026 Election Information",
-   "url": "https://www.pewresearch.org/short-reads/2026/10/23/few-americans-say-they-are-asking-ai-chatbots-for-2026-election-information/",
-   "date": "2026-10-23",
-   "source": "Pew Research Center",
-   "kind": "research",
-   "tags": [
-    "ai"
-   ]
-  },
-  {
-   "title": "Women, Work and Caregiving Through the Arc of Family Life",
-   "url": "https://www.pewresearch.org/social-trends/2026/10/22/women-work-and-caregiving-through-the-arc-of-family-life/",
-   "date": "2026-10-22",
-   "source": "Pew Research Center",
-   "kind": "research",
-   "tags": []
   },
   {
    "title": "Revenue per Worker Is Up. Are Firms Getting a Larger Share?",
@@ -589,7 +593,7 @@
   {
    "name": "Pew Research Center",
    "ok": true,
-   "count": 12
+   "count": 11
   },
   {
    "name": "Technical College System of Georgia",
@@ -604,17 +608,17 @@
   {
    "name": "Military Times",
    "ok": true,
-   "count": 1
+   "count": 0
   },
   {
    "name": "Military.com",
    "ok": true,
-   "count": 0
+   "count": 1
   },
   {
    "name": "Air & Space Forces Magazine",
    "ok": true,
-   "count": 0
+   "count": 1
   },
   {
    "name": "New America",
